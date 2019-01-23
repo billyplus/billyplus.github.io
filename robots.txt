@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Allow: /2018/
+Allow: /2019/
+Allow: /about/
+Allow: /author/
+Allow: /categories/
+Allow: /page/
+Allow: /post/
+Allow: /tags/
+Disallow: /css/
+Disallow: /image/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /sass/
+Sitemap: https://ybilly.com/sitemap.xml

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 长孙叔叔的次世界</title>
+    <link>https://ybilly.com/categories/</link>
+    <description>Recent content in Categories on 长孙叔叔的次世界</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="https://ybilly.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用经验</title>
+      <link>https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</link>
+      <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
+      
+      <guid>https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>学习vue</title>
+      <link>https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/</link>
+      <pubDate>Fri, 20 Jul 2018 10:10:58 +0000</pubDate>
+      
+      <guid>https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
