@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="长孙叔叔" />
-  <meta name="description" content="git config 配置代理在go get命令中无效 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。
+  <meta name="description" content="新版通用脚本 Update: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本
+git config 配置代理在go get命令中无效 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。
 因为当你使用 go get golang.org/x/crypto 时，需要先访问 https://golang.org/x/crypto?go-get=1 来获取版本库的类型是 git 或 svn 或是其它 。这个阶段 git config 配置的代理是不起作用的。所以 go get就会失败。
 直接使用 ss 的 socks5 代理 在 windows 环境中，网上以前的经验是使用一个软件把 ss 的 socks5 代理转成 http 代理，然后使用 set http_proxy=http://127.0.0.1:1081 这样来达到目的。
 实际上不需要那么麻烦，经过测试，go get命令直接就可以支持 socks5 代理。
@@ -63,7 +64,11 @@
 
 
 <meta property="og:title" content="go-get 利用 socks5 代理翻墙下载" />
-<meta property="og:description" content="git config 配置代理在go get命令中无效
+<meta property="og:description" content="新版通用脚本
+
+Update: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本
+
+git config 配置代理在go get命令中无效
 
 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。
 
@@ -81,7 +86,11 @@ go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git confi
 <meta property="article:modified_time" content="2019-01-07T17:25:00&#43;00:00"/>
 
 <meta itemprop="name" content="go-get 利用 socks5 代理翻墙下载">
-<meta itemprop="description" content="git config 配置代理在go get命令中无效
+<meta itemprop="description" content="新版通用脚本
+
+Update: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本
+
+git config 配置代理在go get命令中无效
 
 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。
 
@@ -98,14 +107,18 @@ go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git confi
 
 <meta itemprop="datePublished" content="2018-07-03T15:28:58&#43;00:00" />
 <meta itemprop="dateModified" content="2019-01-07T17:25:00&#43;00:00" />
-<meta itemprop="wordCount" content="345">
+<meta itemprop="wordCount" content="384">
 
 
 
 <meta itemprop="keywords" content="shadowsocks,golang,翻墙," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="go-get 利用 socks5 代理翻墙下载"/>
-<meta name="twitter:description" content="git config 配置代理在go get命令中无效
+<meta name="twitter:description" content="新版通用脚本
+
+Update: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本
+
+git config 配置代理在go get命令中无效
 
 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。
 
@@ -332,7 +345,7 @@ if (!doNotTrack) {
             <a href="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/"> 使用经验 </a>
             
           </div>
-        <span class="more-meta"> 约 345 字 </span>
+        <span class="more-meta"> 约 384 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
 
         
@@ -355,6 +368,7 @@ if (!doNotTrack) {
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
+<li><a href="#新版通用脚本">新版通用脚本</a></li>
 <li><a href="#git-config-配置代理在-go-get-命令中无效"><code>git config</code> 配置代理在<code>go get</code>命令中无效</a></li>
 <li><a href="#直接使用-ss-的-socks5-代理">直接使用 <code>ss</code> 的 <code>socks5</code> 代理</a></li>
 </ul>
@@ -364,7 +378,11 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      <h1 id="git-config-配置代理在-go-get-命令中无效"><code>git config</code> 配置代理在<code>go get</code>命令中无效</h1>
+      <h1 id="新版通用脚本">新版通用脚本</h1>
+
+<p>Update: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/">传送门·通用翻墙脚本</a></p>
+
+<h1 id="git-config-配置代理在-go-get-命令中无效"><code>git config</code> 配置代理在<code>go get</code>命令中无效</h1>
 
 <p><code>go get</code> 下载软件包时遇到的翻墙问题确实很烦人。而且 <code>git config</code> 里面配的代理也是会导致<code>go get</code>失败的。</p>
 

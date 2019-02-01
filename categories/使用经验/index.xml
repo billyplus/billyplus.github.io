@@ -169,7 +169,11 @@ pause&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
       <pubDate>Tue, 03 Jul 2018 15:28:58 +0000</pubDate>
       
       <guid>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
-      <description>&lt;h1 id=&#34;git-config-配置代理在-go-get-命令中无效&#34;&gt;&lt;code&gt;git config&lt;/code&gt; 配置代理在&lt;code&gt;go get&lt;/code&gt;命令中无效&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;新版通用脚本&#34;&gt;新版通用脚本&lt;/h1&gt;
+
+&lt;p&gt;Update: 2019-01-06，新增更通用的脚本方法：&lt;a href=&#34;https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/&#34;&gt;传送门·通用翻墙脚本&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;git-config-配置代理在-go-get-命令中无效&#34;&gt;&lt;code&gt;git config&lt;/code&gt; 配置代理在&lt;code&gt;go get&lt;/code&gt;命令中无效&lt;/h1&gt;
 
 &lt;p&gt;&lt;code&gt;go get&lt;/code&gt; 下载软件包时遇到的翻墙问题确实很烦人。而且 &lt;code&gt;git config&lt;/code&gt; 里面配的代理也是会导致&lt;code&gt;go get&lt;/code&gt;失败的。&lt;/p&gt;
 
