@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>长孙叔叔的次世界</title>
@@ -531,7 +530,7 @@ sudo docker run --rm --volumes-from store -v &lt;span class=&#34;k&#34;&gt;$(&lt
       
       <guid>https://ybilly.com/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/</guid>
       
-        <description>&lt;h1 id=&#34;production打包&#34;&gt;Production打包&lt;/h1&gt;
+        <description>&lt;!-- # Production打包 --&gt;
 
 &lt;p&gt;这几天准备研究一下，webpack怎么找包发布项目。&lt;/p&gt;
 
