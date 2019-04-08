@@ -62,7 +62,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ybilly.com/" />
 
-<meta property="og:updated_time" content="2019-01-07T21:06:30&#43;08:00"/>
+<meta property="og:updated_time" content="2019-04-07T10:13:58&#43;00:00"/>
 
 <meta itemprop="name" content="长孙叔叔的次世界">
 <meta itemprop="description" content="人与动物的区别不在智商和大脑，而是思想.">
@@ -275,6 +275,87 @@ if (!doNotTrack) {
   <section id="posts" class="posts">
     
     
+    
+      <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/">2.3.0 production打包</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2018-07-15" class="post-time">
+        2018-07-15
+      </time>
+      <div class="post-category">
+          <a href="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/"> 学习vue </a>
+          
+        </div>
+      <span class="more-meta"> 约 593 字 </span>
+      <span class="more-meta"> 预计阅读 2 分钟 </span>
+      
+      
+      
+        <span id="/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/" class="leancloud_visitors" data-flag-title="2.3.0 production打包">
+          <span class="post-meta-item-text"> | 阅读 </span>
+          <span class="leancloud-visitors-count"></span>
+        </span>
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <!-- # Production打包 -->
+
+<p>这几天准备研究一下，webpack怎么找包发布项目。</p>
+
+<h2 id="打包需求">打包需求：</h2>
+
+<ul>
+<li>包要尽量小；</li>
+<li>打包速度尽量快；</li>
+<li>自动打包静态文件；</li>
+</ul>
+
+<h1 id="打包测试">打包测试</h1>
+
+<p>新增一个配置文件 <code>webpack.prod.conf</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Webpack</span> <span class="nx">from</span> <span class="s1">&#39;webpack&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">merge</span> <span class="nx">from</span> <span class="s1">&#39;webpack-merge&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">config</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./webpack.conf&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">prodConfig</span>: <span class="kt">Webpack.Configuration</span> <span class="o">=</span> <span class="nx">merge</span><span class="p">.</span><span class="nx">smart</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">prodConfig</span><span class="p">;</span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+    <div class="read-more">
+      <a href="/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/" class="read-more-link">阅读全文</a>
+    </div>
+    
+  </div>
+</article>
+
     
       <article class="post bg-white">
   <header class="post-header">
@@ -553,75 +634,6 @@ if (!doNotTrack) {
     </div>
     <div class="read-more">
       <a href="/2018/06/10/2.1.0-vue%E5%8D%95%E9%A1%B5%E5%B7%A5%E7%A8%8B/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/2018/06/03/2.0.0-webpack%E6%89%93%E5%8C%85/">2.0.0 webpack打包</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-06-03" class="post-time">
-        2018-06-03
-      </time>
-      <div class="post-category">
-          <a href="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/"> 学习vue </a>
-          
-        </div>
-      <span class="more-meta"> 约 594 字 </span>
-      <span class="more-meta"> 预计阅读 2 分钟 </span>
-      
-      
-      
-        <span id="/2018/06/03/2.0.0-webpack%E6%89%93%E5%8C%85/" class="leancloud_visitors" data-flag-title="2.0.0 webpack打包">
-          <span class="post-meta-item-text"> | 阅读 </span>
-          <span class="leancloud-visitors-count"></span>
-        </span>
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h1 id="安装其它包">安装其它包</h1>
-
-<h2 id="打包插件">打包插件</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D vue-loader ts-loader cache-loader style-loader css-loader url-loader file-loader html-webpack-plugin vue-template-compiler</code></pre></td></tr></table>
-</div>
-</div>
-<h2 id="为了使用-ts-格式的-webpack-配置">为了使用 .ts 格式的 webpack 配置</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D  ts-node @types/html-webpack-plugin @types/node @types/webpack @types/webpack-merge</code></pre></td></tr></table>
-</div>
-</div>
-<h2 id="babel相关的包">babel相关的包</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D @babel/core @babel/preset-typescript babel-loader</code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-    <div class="read-more">
-      <a href="/2018/06/03/2.0.0-webpack%E6%89%93%E5%8C%85/" class="read-more-link">阅读全文</a>
     </div>
     
   </div>
