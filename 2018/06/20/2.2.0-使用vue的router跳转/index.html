@@ -24,7 +24,7 @@
 
 <meta name="author" content="长孙叔叔" />
   <meta name="description" content="增加router模块 在 src/router 目录下新建 index.ts, 用来定义整个页面的路由。
-1 2 3 4 5 6 7 8 9 10 11 12  import Vue from &amp;#39;vue&amp;#39;; import VueRouter, { RouteConfig } from &amp;#39;vue-router&amp;#39;; Vue.use(VueRouter); import Layout from &amp;#39;@/views/layout/index.vue&amp;#39;; export const staticRouter: RouteConfig[] = [ { path: &amp;#39;/&amp;#39;, component: Layout, redirect: &amp;#39;dashboard&amp;#39; } ]  " />
+1 2 3 4 5 6 7 8 9 10 11 12  import Vue from &amp;#39;vue&amp;#39;; import VueRouter, { RouteConfig } from &amp;#39;vue-router&amp;#39;; Vue.use(VueRouter); import Layout from &amp;#39;@/views/layout/index.vue&amp;#39;; export const staticRouter: RouteConfig[] = [ { path: &amp;#39;/&amp;#39;, component: Layout, redirect: &amp;#39;dashboard&amp;#39; } ]   " />
 
   <meta name="keywords" content="长孙叔叔, golang, go, rust, 翻墙" />
 
@@ -33,7 +33,7 @@
 <meta name="google-site-verification" content="WVaCWGBi37oWDMqT_yaJYlot9HA1E69zMKHC0J5vUGI" />
 
 
-<meta name="generator" content="Hugo 0.55.2" />
+<meta name="generator" content="Hugo 0.59.0-DEV" />
 
 
 <link rel="canonical" href="https://ybilly.com/2018/06/20/2.2.0-%E4%BD%BF%E7%94%A8vue%E7%9A%84router%E8%B7%B3%E8%BD%AC/" />
@@ -91,12 +91,12 @@ export const staticRouter: RouteConfig[] = [
     }
 ]
 
+
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ybilly.com/2018/06/20/2.2.0-%E4%BD%BF%E7%94%A8vue%E7%9A%84router%E8%B7%B3%E8%BD%AC/" />
-<meta property="article:published_time" content="2018-06-20T15:28:58&#43;00:00"/>
-<meta property="article:modified_time" content="2018-06-20T15:28:58&#43;00:00"/>
-
+<meta property="article:published_time" content="2018-06-20T15:28:58+00:00" />
+<meta property="article:modified_time" content="2018-06-20T15:28:58+00:00" />
 <meta itemprop="name" content="2.2.0 使用vue的router跳转">
 <meta itemprop="description" content="增加router模块
 
@@ -129,6 +129,7 @@ export const staticRouter: RouteConfig[] = [
         path: &#39;/&#39;, component: Layout, redirect: &#39;dashboard&#39;
     }
 ]
+
 
 ">
 
@@ -173,6 +174,7 @@ export const staticRouter: RouteConfig[] = [
         path: &#39;/&#39;, component: Layout, redirect: &#39;dashboard&#39;
     }
 ]
+
 
 "/>
 
@@ -451,7 +453,8 @@ if (!doNotTrack) {
     <span class="p">{</span>
         <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">Layout</span><span class="p">,</span> <span class="nx">redirect</span><span class="o">:</span> <span class="s1">&#39;dashboard&#39;</span>
     <span class="p">}</span>
-<span class="p">]</span></code></pre></td></tr></table>
+<span class="p">]</span>
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>然后在 <code>src/index.ts</code> 里面需要把 <code>router</code> 引入。</p>
@@ -472,7 +475,8 @@ if (!doNotTrack) {
     <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
     <span class="nx">router</span><span class="p">,</span>
     <span class="p">......</span>
-<span class="p">});</span></code></pre></td></tr></table>
+<span class="p">});</span>
+</code></pre></td></tr></table>
 </div>
 </div>
 <h1 id="新建页面-layout">新建页面 Layout</h1>
@@ -527,8 +531,8 @@ if (!doNotTrack) {
 <span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
 
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ts&#34;</span><span class="p">&gt;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">Vue</span><span class="p">,</span> <span class="nx">Prop</span><span class="p">,</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;vue-property-decorator&#34;</span><span class="p">;</span>
-<span class="k">export</span> <span class="k">default</span> <span class="k">class</span> <span class="nx">Layout</span> <span class="k">extends</span> <span class="nx">Vue</span> <span class="p">{}</span>
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">Vue</span><span class="p">,</span> <span class="nx">Prop</span><span class="p">,</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;vue-property-decorator&#34;</span><span class="p">;</span>
+<span class="kr">export</span> <span class="k">default</span> <span class="kr">class</span> <span class="nx">Layout</span> <span class="kr">extends</span> <span class="nx">Vue</span> <span class="p">{}</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
 </div>
 </div>

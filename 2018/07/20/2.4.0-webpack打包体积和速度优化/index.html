@@ -39,7 +39,7 @@ tsconfig.json
 <meta name="google-site-verification" content="WVaCWGBi37oWDMqT_yaJYlot9HA1E69zMKHC0J5vUGI" />
 
 
-<meta name="generator" content="Hugo 0.55.2" />
+<meta name="generator" content="Hugo 0.59.0-DEV" />
 
 
 <link rel="canonical" href="https://ybilly.com/2018/07/20/2.4.0-webpack%E6%89%93%E5%8C%85%E4%BD%93%E7%A7%AF%E5%92%8C%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/" />
@@ -101,9 +101,8 @@ tsconfig.webpack.json
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ybilly.com/2018/07/20/2.4.0-webpack%E6%89%93%E5%8C%85%E4%BD%93%E7%A7%AF%E5%92%8C%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/" />
-<meta property="article:published_time" content="2018-07-20T10:10:58&#43;00:00"/>
-<meta property="article:modified_time" content="2018-07-20T10:10:58&#43;00:00"/>
-
+<meta property="article:published_time" content="2018-07-20T10:10:58+00:00" />
+<meta property="article:modified_time" content="2018-07-20T10:10:58+00:00" />
 <meta itemprop="name" content="2.4.0 webpack打包体积和速度优化">
 <meta itemprop="description" content="typescript的tree shaking
 
@@ -522,7 +521,8 @@ if (!doNotTrack) {
                     <span class="nx">configFile</span><span class="o">:</span> <span class="s2">&#34;tsconfig.webpack.json&#34;</span><span class="p">,</span>
                     <span class="nx">appendTsSuffixTo</span><span class="o">:</span> <span class="p">[</span><span class="sr">/\.vue$/</span><span class="p">],</span>
                 <span class="p">},</span>
-            <span class="p">},</span></code></pre></td></tr></table>
+            <span class="p">},</span>
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>打包测试一下，<code>app.js</code>从<code>12k</code>减小到<code>7k</code>，变化明显。</p>
@@ -649,7 +649,8 @@ if (!doNotTrack) {
             <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;[name]_library&#39;</span><span class="p">,</span>
         <span class="p">}),</span>
     <span class="p">],</span>
-<span class="p">};</span></code></pre></td></tr></table>
+<span class="p">};</span>
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>这个配置用来生成<code>verdor.dll.js</code>文件，然后修改<code>webpack.prod.conf.ts</code>配置，引用<code>verdor.dll.js</code>。</p>
@@ -666,7 +667,8 @@ if (!doNotTrack) {
 <pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new</span> <span class="nx">Webpack</span><span class="p">.</span><span class="nx">DllReferencePlugin</span><span class="p">({</span>
     <span class="nx">context</span>: <span class="kt">__dirname</span><span class="p">,</span>
     <span class="nx">manifest</span>: <span class="kt">require</span><span class="p">(</span><span class="s1">&#39;../static/js/vendor-manifest.json&#39;</span><span class="p">),</span>
-<span class="p">}),</span></code></pre></td></tr></table>
+<span class="p">}),</span>
+</code></pre></td></tr></table>
 </div>
 </div>
 <p>先运行 <code>webpack --config build/webpack.dll.conf.ts</code> 生成dll，然后运行 <code>cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.ts</code>。</p>

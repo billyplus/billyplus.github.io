@@ -42,8 +42,8 @@
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; off
 
-&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;http_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;socks5&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;//127.0.0.1&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;:1080&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;127.0.0.1&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;1081&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;http_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;socks5://127.0.0.1:1080
+&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;127.0.0.1:1081
 
 &lt;span class=&#34;nv&#34;&gt;%*&lt;/span&gt;
 
