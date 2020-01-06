@@ -3,11 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ybilly.com/zh/</loc>
+    <loc>https://ybilly.com/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/"
+                href="https://ybilly.com/zh-cn/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -17,16 +17,16 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/"
+                href="https://ybilly.com/"
                 />
   </url>
   
   <url>
-    <loc>https://ybilly.com/zh/categories/</loc>
+    <loc>https://ybilly.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/categories/"
+                href="https://ybilly.com/zh-cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -36,16 +36,16 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/categories/"
+                href="https://ybilly.com/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://ybilly.com/zh/series/</loc>
+    <loc>https://ybilly.com/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/series/"
+                href="https://ybilly.com/zh-cn/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -55,16 +55,16 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/series/"
+                href="https://ybilly.com/series/"
                 />
   </url>
   
   <url>
-    <loc>https://ybilly.com/zh/tags/</loc>
+    <loc>https://ybilly.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/tags/"
+                href="https://ybilly.com/zh-cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -74,7 +74,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/tags/"
+                href="https://ybilly.com/tags/"
                 />
   </url>
   
