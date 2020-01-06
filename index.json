@@ -1,14 +1,5 @@
 [
 {
-	"uri": "https://ybilly.com/",
-	"title": "Billy&#39;s",
-	"tags": [],
-	"categories": [],
-	"series": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://ybilly.com/tags/golang/",
 	"title": "golang",
 	"tags": [],
@@ -56,6 +47,15 @@
 {
 	"uri": "https://ybilly.com/tags/",
 	"title": "标签",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/",
+	"title": "长孙叔叔的次世界",
 	"tags": [],
 	"categories": [],
 	"series": [],
@@ -117,7 +117,7 @@
 	"content": ""
 },
 {
-	"uri": "https://ybilly.com/tags/vps/",
+	"uri": "https://ybilly.com/categories/vps/",
 	"title": "vps",
 	"tags": [],
 	"categories": [],
@@ -126,7 +126,7 @@
 	"content": ""
 },
 {
-	"uri": "https://ybilly.com/categories/vps/",
+	"uri": "https://ybilly.com/tags/vps/",
 	"title": "vps",
 	"tags": [],
 	"categories": [],

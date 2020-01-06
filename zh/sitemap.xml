@@ -3,12 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ybilly.com/en/categories/</loc>
+    <loc>https://ybilly.com/zh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ybilly.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ybilly.com/en/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/categories/"
+                href="https://ybilly.com/zh/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -19,15 +33,15 @@
                 hreflang="en"
                 href="https://ybilly.com/en/categories/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ybilly.com/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/series/"
+                href="https://ybilly.com/zh/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/zh/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -38,15 +52,15 @@
                 hreflang="en"
                 href="https://ybilly.com/en/series/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ybilly.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/tags/"
+                href="https://ybilly.com/zh/series/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -57,24 +71,10 @@
                 hreflang="en"
                 href="https://ybilly.com/en/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://ybilly.com/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://ybilly.com/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ybilly.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ybilly.com/en/"
+                href="https://ybilly.com/zh/tags/"
                 />
   </url>
   

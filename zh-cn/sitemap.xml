@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ybilly.com/</loc>
-    <lastmod>2020-01-06T17:20:26+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ybilly.com/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ybilly.com/"
-                />
-  </url>
-  
-  <url>
     <loc>https://ybilly.com/tags/golang/</loc>
     <lastmod>2020-01-06T17:20:26+08:00</lastmod>
   </url>
@@ -35,6 +20,11 @@
   <url>
     <loc>https://ybilly.com/series/</loc>
     <lastmod>2020-01-06T17:20:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ybilly.com/zh/series/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -57,6 +47,11 @@
     <lastmod>2020-01-06T17:20:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://ybilly.com/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://ybilly.com/en/tags/"
                 />
@@ -64,6 +59,26 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://ybilly.com/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/</loc>
+    <lastmod>2020-01-06T17:20:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://ybilly.com/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ybilly.com/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ybilly.com/"
                 />
   </url>
   
@@ -97,6 +112,11 @@
     <lastmod>2020-01-06T17:10:49+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh"
+                href="https://ybilly.com/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://ybilly.com/en/categories/"
                 />
@@ -108,12 +128,12 @@
   </url>
   
   <url>
-    <loc>https://ybilly.com/tags/vps/</loc>
+    <loc>https://ybilly.com/categories/vps/</loc>
     <lastmod>2020-01-06T15:05:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ybilly.com/categories/vps/</loc>
+    <loc>https://ybilly.com/tags/vps/</loc>
     <lastmod>2020-01-06T15:05:27+08:00</lastmod>
   </url>
   
