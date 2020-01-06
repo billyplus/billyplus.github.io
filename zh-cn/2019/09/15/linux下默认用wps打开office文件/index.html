@@ -333,7 +333,7 @@
     "datePublished": "2019-09-15T10:20:00Z",
     "dateModified": "2019-09-15T10:20:00Z",
     "url" : "https://ybilly.com/zh-cn/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/",
-    "description": "问题 相信很多人都遇到过，每次更新wps后，都会发生.docx、.xlsx文件默认打开方式被修改的问题。直接点击打开office文件的话，会被",
+    "description": "\u003cp\u003e相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生\u003ccode\u003e.docx\u003c/code\u003e、\u003ccode\u003e.xlsx\u003c/code\u003e文件默认打开方式被修改的问题。直接点击打开\u003ccode\u003eoffice\u003c/code\u003e文件的话，会被认为是打开一个\u003ccode\u003ezip\u003c/code\u003e文件。只有通过右键菜单里面选择\u003ccode\u003eopen with wps...\u003c/code\u003e这种方式才能正常使用 wps 打开。\u003c/p\u003e",
     "keywords": ["linux","wps"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -606,8 +606,7 @@ if (!doNotTrack) {
 </div>
     </div>    
     <article class="single__contents">
-      <h2 id="问题">问题</h2>
-<p>相信很多人都遇到过，每次更新wps后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用wps打开。</p>
+      <p>相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用 wps 打开。</p>
 <h2 id="解决办法">解决办法</h2>
 <p>在网上搜了一圈，确定是由于<code>wps</code>自己加了<code>mime type</code>定义的原因。</p>
 <p>具体可以<code>ls /usr/share/mime/packages/</code>查看一下，该目录下面应该会有几个<code>wps-office-</code>开头的文件，</p>
@@ -625,8 +624,7 @@ sudo rm /usr/share/mime/packages/wps-office-*
 sudo update-mime-database /usr/share/mime
 </code></pre></td></tr></table>
 </div>
-</div><p>再单击打开<code>.xlsx</code>文件，发现已经可以正常默认使用wps打开了。</p>
-
+</div><p>再单击打开<code>.xlsx</code>文件，发现已经可以正常默认使用 wps 打开了。</p>
     </article>
     
     
@@ -733,10 +731,6 @@ sudo update-mime-database /usr/share/mime
         
         <li>
           <a href="/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/" class="related__link">docker容器的迁移</a>
-        </li>
-        
-        <li>
-          <a href="/zh-cn/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/" class="related__link">解决webpack无法将css打包成单个文件的问题</a>
         </li>
         
         <li>
@@ -889,7 +883,6 @@ sudo update-mime-database /usr/share/mime
   <div class="toc ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#问题">问题</a></li>
     <li><a href="#解决办法">解决办法</a></li>
   </ul>
 </nav>

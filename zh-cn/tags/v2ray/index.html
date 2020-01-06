@@ -591,38 +591,8 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          <h1 id="通用的翻墙脚本">通用的翻墙脚本</h1>
-<p>比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+          <p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
 <p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759">ZeppLu</a>的方案。</p>
-<h1 id="windows下的方案">Windows下的方案</h1>
-<p>在<code>PATH</code>目录下新建一个<code>proxy.bat</code>的批处理</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
-
-<span class="k">set</span> <span class="k"></span><span class="nv">http_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
-<span class="k">set</span> <span class="k"></span><span class="nv">https_proxy</span><span class="p">=</span>127.0.0.1:1081
-
-<span class="nv">%*</span>
-
-<span class="k">echo</span> ...
-
-<span class="k">pause</span>
-</code></pre></td></tr></table>
-</div>
-</div>
           
         </div>
       </div>
@@ -696,19 +666,6 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/zh-cn/tags/elementui/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        elementUI
-                    </span>
-                    <span class="taxo__num">
-                        4
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
                 <a href="/zh-cn/tags/golang/" class="is-tags taxo__link">
                     <span class="taxo__text">
                         golang
@@ -748,19 +705,6 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/zh-cn/tags/typescript/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        typescript
-                    </span>
-                    <span class="taxo__num">
-                        4
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
                 <a href="/zh-cn/tags/v2ray/" class="is-tags taxo__link">
                     <span class="taxo__text">
                         v2ray
@@ -787,38 +731,12 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/zh-cn/tags/vue/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        vue
-                    </span>
-                    <span class="taxo__num">
-                        5
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
                 <a href="/zh-cn/tags/vultr/" class="is-tags taxo__link">
                     <span class="taxo__text">
                         vultr
                     </span>
                     <span class="taxo__num">
                         1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/zh-cn/tags/webpack/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        webpack
-                    </span>
-                    <span class="taxo__num">
-                        7
                     </span>
                 </a>
             </span>
@@ -934,20 +852,7 @@ if (!doNotTrack) {
                         使用经验
                     </span>
                     <span class="taxo__num">
-                        6
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/zh-cn/categories/%E5%AD%A6%E4%B9%A0vue/" class="is-categories taxo__link">
-                    <span class="taxo__text">
-                        学习vue
-                    </span>
-                    <span class="taxo__num">
-                        6
+                        5
                     </span>
                 </a>
             </span>

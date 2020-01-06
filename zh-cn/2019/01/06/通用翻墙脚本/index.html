@@ -333,7 +333,7 @@
     "datePublished": "2019-01-06T17:25:00Z",
     "dateModified": "2019-01-07T17:25:00Z",
     "url" : "https://ybilly.com/zh-cn/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/",
-    "description": "\u003ch1 id=\"通用的翻墙脚本\"\u003e通用的翻墙脚本\u003c/h1\u003e \u003cp\u003e比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的\u003ccode\u003ehttp_proxy\u003c/code\u003e或者\u003ccode\u003ehttps_proxy\u003c/code\u003e，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要 …\u003c/p\u003e",
+    "description": "\u003cp\u003e比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的\u003ccode\u003ehttp_proxy\u003c/code\u003e或者\u003ccode\u003ehttps_proxy\u003c/code\u003e，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用 …\u003c/p\u003e",
     "keywords": ["v2ray","shadowsocks","golang","翻墙"],
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -624,10 +624,9 @@ if (!doNotTrack) {
 </div>
     </div>    
     <article class="single__contents">
-      <h1 id="通用的翻墙脚本">通用的翻墙脚本</h1>
-<p>比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+      <p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
 <p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759">ZeppLu</a>的方案。</p>
-<h1 id="windows下的方案">Windows下的方案</h1>
+<h2 id="windows-下的方案">Windows 下的方案</h2>
 <p>在<code>PATH</code>目录下新建一个<code>proxy.bat</code>的批处理</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -655,8 +654,8 @@ if (!doNotTrack) {
 <span class="k">pause</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="linux下的方案">Linux下的方案</h1>
-<p>在<code>.bashrc</code>或者<code>.profile</code>（取决于你使用的tty）中增加以下设置</p>
+</div><h2 id="linux-下的方案">Linux 下的方案</h2>
+<p>在<code>.bashrc</code>或者<code>.profile</code>（取决于你使用的 tty）中增加以下设置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -673,7 +672,7 @@ if (!doNotTrack) {
 </span><span class="s1">        HTTPS_PROXY=http://127.0.0.1:1081/&#39;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="使用效果">使用效果</h1>
+</div><h2 id="使用效果">使用效果</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -834,10 +833,6 @@ package golang.org/x/crypto: no Go files in /e/project/go/src/golang.org/x/crypt
         </li>
         
         <li>
-          <a href="/zh-cn/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/" class="related__link">解决webpack无法将css打包成单个文件的问题</a>
-        </li>
-        
-        <li>
           <a href="/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/" class="related__link">观察者模式与订阅-发布模式的区别</a>
         </li>
         
@@ -988,7 +983,13 @@ package golang.org/x/crypto: no Go files in /e/project/go/src/golang.org/x/crypt
     
   </div>
   <div class="toc ">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#windows-下的方案">Windows 下的方案</a></li>
+    <li><a href="#linux-下的方案">Linux 下的方案</a></li>
+    <li><a href="#使用效果">使用效果</a></li>
+  </ul>
+</nav>
   </div>
 </section>
 

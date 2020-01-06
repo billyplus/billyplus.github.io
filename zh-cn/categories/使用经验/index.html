@@ -306,7 +306,7 @@
     <meta name="description" content="" />
 <meta name="keywords" content="">
 <meta name="created" content="2019-09-15T10:20:00&#43;0000">
-<meta name="modified" content="2019-09-23T11:00:23&#43;0800">
+<meta name="modified" content="2020-01-06T15:08:22&#43;0800">
 
 
 <meta property="og:site_name" content="Billy&#39;s">
@@ -591,7 +591,7 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          问题 相信很多人都遇到过，每次更新wps后，都会发生.docx、.xlsx文件默认打开方式被修改的问题。直接点击打开office文件的话，会被
+          <p>相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用 wps 打开。</p>
           
         </div>
       </div>
@@ -614,38 +614,8 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          <h1 id="通用的翻墙脚本">通用的翻墙脚本</h1>
-<p>比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+          <p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
 <p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759">ZeppLu</a>的方案。</p>
-<h1 id="windows下的方案">Windows下的方案</h1>
-<p>在<code>PATH</code>目录下新建一个<code>proxy.bat</code>的批处理</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
-
-<span class="k">set</span> <span class="k"></span><span class="nv">http_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
-<span class="k">set</span> <span class="k"></span><span class="nv">https_proxy</span><span class="p">=</span>127.0.0.1:1081
-
-<span class="nv">%*</span>
-
-<span class="k">echo</span> ...
-
-<span class="k">pause</span>
-</code></pre></td></tr></table>
-</div>
-</div>
           
         </div>
       </div>
@@ -668,65 +638,8 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          <h1 id="前叙">前叙</h1>
-<p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
+          <p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
 <p>另外准备了一台 1G 内存的<code>vps</code>，需要做的事情就是把以前的<code>数据库</code>、<code>git数据</code>、各种东西迁移过去。所幸全部应用都已经用<code>docker</code>实现了容器化，有用数据都放在<code>volume</code>里面。迁移起来非常方便。</p>
-<h1 id="准备工作">准备工作</h1>
-<p>原来的<code>vps</code>在<code>vultr</code>中，叫<code>Src</code>，新的<code>vps</code>叫<code>Dest</code>。分别建个目录做备份。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># from Src</span>
-:~<span class="nv">$mkdir</span> backup
-
-
-<span class="c1"># from dest</span>
-:~<span class="nv">$mkdir</span> backup
-</code></pre></td></tr></table>
-</div>
-</div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-</article>
-
-      
-      
-  <article class="summary-classic">
-  <div class="summary-classic__flex-box">
-    
-    
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://ybilly.com/zh-cn/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/'> 解决webpack无法将css打包成单个文件的问题</a> </h5>
-        <h6 class="subtitle caption"><span title="">📅   </span>  <span title=""> &middot; ☕2  </span></h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-          <h1 id="遇到的问题">遇到的问题</h1>
-<p>在打包一个旧项目的时候，遇到所有的<code>css</code>都丢失了的情况。检查文件发现没有导出<code>style.css</code>这个文件。</p>
-<p>按照打包配置，应该会把项目中所有的<code>css</code>整合成一个文件导出的，但是打包过程正常，<code>style.css</code>却没有导出。</p>
-<p>找了半天都没有找出问题，试了多种打包方案，把<code>css</code>拆开的、合在一起的、把<code>extract-text-webpack-plugin</code>插件换成<code>mini-css-extract-plugin</code>插件……</p>
-<p>整个打包过程没有任何错误提示，导致查错没有方向。</p>
-<h1 id="是sideeffects的锅">是sideEffects的锅</h1>
-<p>最后在 <a href="https://stackoverflow.com/questions/50416293/webpack-minicssextractplugin-doesnt-extract-file">stackoverflow</a> 这个问题上受到了启发。</p>
-<p>Note that any imported file is subject to tree shaking. This means if you use something like css-loader in your project and import a CSS file, it needs to be added to the side effect list so it will not be unintentionally dropped in production mode.</p>
-<p><code>Webpack</code>文档里面这样说：</p>
-<pre><code>A &quot;side effect&quot; is defined as code that performs a special behavior when imported, other than exposing one or more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
-
-&quot;side effect&quot;就是一段导入后执行特殊功能的代码，比如：`polyfills`的是直接作用在全局的，它并没有导出。
-</code></pre>
           
         </div>
       </div>
@@ -749,28 +662,9 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          <ul>
-<li><a href="#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88">观察者模式与订阅-发布模式的区别是什么</a>
-<ul>
-<li><a href="#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F"><code>观察者模式</code></a></li>
-<li><a href="#%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F"><code>订阅-发布模式</code></a></li>
-<li><a href="#%E5%BB%B6%E4%BC%B8">延伸</a></li>
-</ul>
-</li>
-</ul>
-<h1 id="观察者模式与订阅-发布模式的区别是什么">观察者模式与订阅-发布模式的区别是什么</h1>
-<p>有人说：“<code>订阅-发者模式</code>=<code>观察者模式</code>”，这么理解的人，是因为<code>订阅-发布模式</code>这个名字取的太简洁。</p>
+          <p>有人说：“<code>订阅-发者模式</code>=<code>观察者模式</code>”，这么理解的人，是因为<code>订阅-发布模式</code>这个名字取的太简洁。</p>
 <p>完整的解读<code>订阅-发布模式</code>，应该叫<code>订阅-分发-发布模式</code>。</p>
 <p><code>观察者模式</code>涉及的角色：<code>订阅者</code>、<code>观察者</code>和<code>目标</code>；而<code>订阅-分发-发布模式</code>涉及的角色：<code>订阅者</code>、<code>发布者</code>和<code>分发器</code>。注意取名的不同表示他们执行的逻辑不同。</p>
-<ul>
-<li><code>订阅者</code>：不用解释了。</li>
-<li><code>观察者</code>：观察目标的状态，然后将结果告诉订阅者。</li>
-<li><code>目标</code>：完全是群众演员。</li>
-<li><code>发布者</code>：将自己的信息或状态告诉分发器，nothing more。</li>
-<li><code>分发器</code>：将发布者告诉自己的信息转告给订阅者，so simple。</li>
-</ul>
-<p>这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。</p>
-<p>我们用现实的例子来说明吧。</p>
           
         </div>
       </div>
@@ -793,15 +687,7 @@ if (!doNotTrack) {
       <div>
         <div class="summary-classic__text p2">
           
-          <h1 id="新版通用脚本">新版通用脚本</h1>
-<p>Updated: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/">传送门·通用翻墙脚本</a></p>
-<h1 id="git-config-配置代理在go-get命令中无效"><code>git config</code> 配置代理在<code>go get</code>命令中无效</h1>
-<p><code>go get</code> 下载软件包时遇到的翻墙问题确实很烦人。而且 <code>git config</code> 里面配的代理也是会导致<code>go get</code>失败的。</p>
-<p>因为当你使用 <code>go get golang.org/x/crypto</code> 时，需要先访问 <code>https://golang.org/x/crypto?go-get=1</code> 来获取版本库的类型是 <code>git</code> 或 <code>svn</code> 或是其它 。这个阶段 <code>git config</code> 配置的代理是不起作用的。所以 <code>go get</code>就会失败。</p>
-<h1 id="直接使用-ss-的-socks5-代理">直接使用 <code>ss</code> 的 <code>socks5</code> 代理</h1>
-<p>在 windows 环境中，网上以前的经验是使用一个软件把 <code>ss</code> 的 <code>socks5</code> 代理转成 <code>http</code> 代理，然后使用 <code>set http_proxy=http://127.0.0.1:1081</code> 这样来达到目的。</p>
-<p>实际上不需要那么麻烦，经过测试，<code>go get</code>命令直接就可以支持 <code>socks5</code> 代理。</p>
-<p>新建一个批处理 <code>goget.bat</code>，放到 <code>PATH</code> 环境下。脚本如下：</p>
+          <p>Updated: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/">传送门·通用翻墙脚本</a></p>
           
         </div>
       </div>
@@ -861,14 +747,14 @@ if (!doNotTrack) {
     </section>
     
     <section class="sidebar-recent">
-        <a href="/zh-cn/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/" class="sidebar-recent__title p1">解决webpack无法将css打包成单个文件的问题</a>
+        <a href="/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/" class="sidebar-recent__title p1">观察者模式与订阅-发布模式的区别</a>
         <ul class="sidebar-recent__ul">
             
         </ul>
     </section>
     
     <section class="sidebar-recent">
-        <a href="/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/" class="sidebar-recent__title p1">观察者模式与订阅-发布模式的区别</a>
+        <a href="/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/" class="sidebar-recent__title p1">go-get 利用 socks5 代理翻墙下载</a>
         <ul class="sidebar-recent__ul">
             
         </ul>
@@ -896,19 +782,6 @@ if (!doNotTrack) {
                     </span>
                     <span class="taxo__num">
                         1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/zh-cn/tags/elementui/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        elementUI
-                    </span>
-                    <span class="taxo__num">
-                        4
                     </span>
                 </a>
             </span>
@@ -955,19 +828,6 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/zh-cn/tags/typescript/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        typescript
-                    </span>
-                    <span class="taxo__num">
-                        4
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
                 <a href="/zh-cn/tags/v2ray/" class="is-tags taxo__link">
                     <span class="taxo__text">
                         v2ray
@@ -994,38 +854,12 @@ if (!doNotTrack) {
         
         
             <span class="tag">
-                <a href="/zh-cn/tags/vue/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        vue
-                    </span>
-                    <span class="taxo__num">
-                        5
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
                 <a href="/zh-cn/tags/vultr/" class="is-tags taxo__link">
                     <span class="taxo__text">
                         vultr
                     </span>
                     <span class="taxo__num">
                         1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/zh-cn/tags/webpack/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        webpack
-                    </span>
-                    <span class="taxo__num">
-                        7
                     </span>
                 </a>
             </span>
@@ -1141,20 +975,7 @@ if (!doNotTrack) {
                         使用经验
                     </span>
                     <span class="taxo__num">
-                        6
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/zh-cn/categories/%E5%AD%A6%E4%B9%A0vue/" class="is-categories taxo__link">
-                    <span class="taxo__text">
-                        学习vue
-                    </span>
-                    <span class="taxo__num">
-                        6
+                        5
                     </span>
                 </a>
             </span>
