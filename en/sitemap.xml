@@ -6,13 +6,8 @@
     <loc>https://ybilly.com/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://ybilly.com/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/zh-cn/categories/"
+                href="https://ybilly.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -25,13 +20,8 @@
     <loc>https://ybilly.com/en/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://ybilly.com/series/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/zh-cn/series/"
+                href="https://ybilly.com/series/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -44,13 +34,8 @@
     <loc>https://ybilly.com/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://ybilly.com/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/zh-cn/tags/"
+                href="https://ybilly.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -63,13 +48,8 @@
     <loc>https://ybilly.com/en/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://ybilly.com/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
-                href="https://ybilly.com/zh-cn/"
+                href="https://ybilly.com/"
                 />
     <xhtml:link
                 rel="alternate"
