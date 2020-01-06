@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
 	<sitemap>
-	   	<loc>https://ybilly.com/zh-cn/sitemap.xml</loc>
-		
-	   	<lastmod>2020-01-06T17:20:26+08:00</lastmod>
+	   	<loc>https://ybilly.com/en/sitemap.xml</loc>
 		
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>https://ybilly.com/en/sitemap.xml</loc>
+	   	<loc>https://ybilly.com/zh-cn/sitemap.xml</loc>
+		
+	   	<lastmod>2020-01-06T17:20:26+08:00</lastmod>
 		
 	</sitemap>
 	
