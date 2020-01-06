@@ -1,0 +1,271 @@
+[
+{
+	"uri": "https://ybilly.com/",
+	"title": "Billy&#39;s",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/golang/",
+	"title": "golang",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/series/golang-in-21-days/",
+	"title": "golang-in-21-days",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/posts/",
+	"title": "Posts",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/series/",
+	"title": "Series",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/posts/2020/01/05/%E5%BC%95%E8%A8%80/",
+	"title": "引言",
+	"tags": ["golang"],
+	"categories": [],
+	"series": ["golang-in-21-days"],
+	"description": "",
+	"content": "面向的对象 以前没有接触过编程的从业者或者学生，经常做一些重复性的数字计算类工作，需要使用较复杂的excel公式或者手动重复多次才能完成任务\n不涉及内容 本书内容不会涉及的二进制、十六进制的概念，不讲解系统内部原理，不讲解网络协议的组成。\n"
+},
+{
+	"uri": "https://ybilly.com/tags/",
+	"title": "标签",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/archive/",
+	"title": "Archive",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "Archive Page",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/linux/",
+	"title": "linux",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/posts/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/",
+	"title": "linux下默认用wps打开office文件",
+	"tags": ["linux", "wps"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生.docx、.xlsx文件默认打开方式被修改的问题。直接点击打开office文件的话，会被认为是打开一个zip文件。只有通过右键菜单里面选择open with wps...这种方式才能正常使用 wps 打开。\n解决办法 在网上搜了一圈，确定是由于wps自己加了mime type定义的原因。\n具体可以ls /usr/share/mime/packages/查看一下，该目录下面应该会有几个wps-office-开头的文件，\n1 2 3 4  # 删除多余的mime type sudo rm /usr/share/mime/packages/wps-office-* # 更新 sudo update-mime-database /usr/share/mime   再单击打开.xlsx文件，发现已经可以正常默认使用 wps 打开了。\n"
+},
+{
+	"uri": "https://ybilly.com/tags/wps/",
+	"title": "wps",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/",
+	"title": "使用经验",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/categories/",
+	"title": "分类",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/vps/",
+	"title": "vps",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/categories/vps/",
+	"title": "vps",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/vultr/",
+	"title": "vultr",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/posts/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/",
+	"title": "vultr新用户送50美金",
+	"tags": ["vps", "vultr", "促销"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。\n有两种办法，\n 一是在注册前先用带推荐码的链接打开 vultr 的网站，比如像这样的：https://www.vultr.com/?ref=7995525-4F 第二种是在注册了帐号以后，首次充值时，输入推荐码，比如：7995525-4F，支持信用卡、支付宝、微信支付。  \n2019.4.20 还可用。\n"
+},
+{
+	"uri": "https://ybilly.com/tags/%E4%BF%83%E9%94%80/",
+	"title": "促销",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/shadowsocks/",
+	"title": "shadowsocks",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/v2ray/",
+	"title": "v2ray",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/",
+	"title": "翻墙",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/posts/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/",
+	"title": "通用翻墙脚本",
+	"tags": ["v2ray", "shadowsocks", "golang", "翻墙"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的http_proxy或者https_proxy，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。\n参考ZeppLu的方案。\nWindows 下的方案 在PATH目录下新建一个proxy.bat的批处理\n1 2 3 4 5 6 7 8 9 10  @echo off\rset http_proxy=socks5://127.0.0.1:1080\rset https_proxy=127.0.0.1:1081\r%*\recho ...\rpause\r  Linux 下的方案 在.bashrc或者.profile（取决于你使用的 tty）中增加以下设置\n1 2 3 4 5  alias socks=\u0026#39;ALL_PROXY=socks5://127.0.0.1:1080/ \\\rhttp_proxy=http://127.0.0.1:1081/ \\\rhttps_proxy=http://127.0.0.1:1081/ \\\rHTTP_PROXY=http://127.0.0.1:1081/ \\\rHTTPS_PROXY=http://127.0.0.1:1081/\u0026#39;\r  使用效果 1 2 3 4 5 6 7 8 9 10 11  \u0026gt;proxy go get -u -v golang.org/x/net\rFetching https://golang.org/x/net?go-get=1\rParsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)\rget \u0026#34;golang.org/x/net\u0026#34;: found meta tag get.metaImport{Prefix:\u0026#34;golang.org/x/net\u0026#34;, VCS:\u0026#34;git\u0026#34;, RepoRoot:\u0026#34;https://go.googlesource.com/net\u0026#34;} at https://golang.org/x/net?go-get=1\rgo: finding golang.org/x/net latest\rFetching https://golang.org/x?go-get=1\rParsing meta tags from https://golang.org/x?go-get=1 (status code 200)\rFetching https://golang.org?go-get=1\rParsing meta tags from https://golang.org?go-get=1 (status code 200)\r...\r请按任意键继续. . .\r  1 2 3 4 5 6  ~ socks go get -u -v golang.org/x/crypto\rFetching https://golang.org/x/crypto?go-get=1\rParsing meta tags from https://golang.org/x/crypto?go-get=1 (status code 200)\rget \u0026#34;golang.org/x/crypto\u0026#34;: found meta tag get.metaImport{Prefix:\u0026#34;golang.org/x/crypto\u0026#34;, VCS:\u0026#34;git\u0026#34;, RepoRoot:\u0026#34;https://go.googlesource.com/crypto\u0026#34;} at https://golang.org/x/crypto?go-get=1\rgolang.org/x/crypto (download)\rpackage golang.org/x/crypto: no Go files in /e/project/go/src/golang.org/x/crypto\r  "
+},
+{
+	"uri": "https://ybilly.com/tags/docker/",
+	"title": "docker",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/",
+	"title": "docker容器的迁移",
+	"tags": ["docker"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "原来在vultr买的vps内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）\n另外准备了一台 1G 内存的vps，需要做的事情就是把以前的数据库、git数据、各种东西迁移过去。所幸全部应用都已经用docker实现了容器化，有用数据都放在volume里面。迁移起来非常方便。\n准备工作 原来的vps在vultr中，叫Src，新的vps叫Dest。分别建个目录做备份。\n1 2 3 4 5 6  # from Src\r:~$mkdir backup\r# from dest\r:~$mkdir backup\r  打包 我的数据都是放在 volume 里面的。首先是在Src中用一个container把volume加载。这个就个人随意了。\n然后将volume里面的东西打包\n1 2 3  # from Src\rsudo docker run -v /gogs --name store alpine /bin/ash\rsudo docker run --rm --volumes-from store -v $(pwd):/backup alpine tar czf /backup/gogs.tar.gz /volumes/gogs\r  传输 用 scp 将打包文件从Src下载到Dest中。\n1 2 3  cd ~/backup\rscp username@ipaddress:~/backup/gogs.tar.gz gogs.tar.gz\r  恢复 同样创建一个volume，然后用一个临时的container加载。然后解包。\n1 2 3 4  sudo docker volume create gogs\rsudo docker run -v /gogs --name store alpine /bin/ash\rsudo docker run --rm --volumes-from store -v $(pwd):/backup alpine ash -c \u0026#34;cd /volumes/gogs \u0026amp;\u0026amp; tar xzf /backup/gogs.tar.gz --strip 2\u0026#34;\r  all done.\n"
+},
+{
+	"uri": "https://ybilly.com/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/",
+	"title": "观察者模式",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/",
+	"title": "观察者模式与订阅-发布模式的区别",
+	"tags": ["观察者模式", "订阅-发布模式", "软件模式"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "有人说：“订阅-发布模式=观察者模式”，这么理解的人，是因为订阅-发布模式这个名字取的太简洁。\n完整的解读订阅-发布模式，应该叫订阅-分发-发布模式。\n观察者模式涉及的角色：订阅者、观察者和目标；而订阅-分发-发布模式涉及的角色：订阅者、发布者和分发器。注意取名的不同表示他们执行的逻辑不同。\n 订阅者：不用解释了。 观察者：观察目标的状态，然后将结果告诉订阅者。 目标：完全是群众演员。 发布者：将自己的信息或状态告诉分发器，nothing more。 分发器：将发布者告诉自己的信息转告给订阅者，so simple。  这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。\n我们用现实的例子来说明吧。\n观察者模式 你在路上看到蚂蚁搬家，想知道它们什么时候搬完，但是又又不想一直这么无聊的盯。所以你找个小孩，给他一块糖，叫他帮你看，好了打电话告诉你。然后你就回寝室打农药了。\n小孩就是观察者，蚂蚁搬家就是目标，你是订阅者。应用场景直观明了。\n后来，你又看到一窝蚂蚁，只好又叫个小孩。因为职能必须唯一，当然我们不可以叫单个小孩一个人看两。\n后来，又叫了个小孩……又叫了个小孩……又叫了个……\n小孩多还不是麻烦，麻烦大的是，有一天，隔壁老王对这个小孩说，也通知我一下，隔壁老李对另一个小孩说，也通知我一下……\n每个小孩要通知 100 个人，你等着 100 个小孩通知你。如果有 1000 个……10000 个……\n订阅-发布模式 这个时候就要另一个模式出场了。有个孩子王还是很有头脑的。他对所有小孩说，你们看着蚂蚁搬家，有结果就告诉他。然后你对其它人说，谁想知道蚂蚁搬家最新进展的来我这里登记一下姓名、年龄、爱好和蚂蚁窝的编号。这时，小孩是发布者，孩子王是分发器，你和老王老李是订阅者。\n延伸 然后孩子王又给老王老李他们两种选择，一种是等他来打电话给老王老李，另一种是隔一段时间老王老李打电话找他问，这就是 push 和 pull 了。\n"
+},
+{
+	"uri": "https://ybilly.com/tags/%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F/",
+	"title": "订阅-发布模式",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/",
+	"title": "软件模式",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/",
+	"title": "go-get 利用 socks5 代理翻墙下载",
+	"tags": ["shadowsocks", "golang", "翻墙"],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": "Updated: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本\ngit config 配置代理在go get命令中无效 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。\n因为当你使用 go get golang.org/x/crypto 时，需要先访问 https://golang.org/x/crypto?go-get=1 来获取版本库的类型是 git 或 svn 或是其它 。这个阶段 git config 配置的代理是不起作用的。所以 go get就会失败。\n直接使用 ss 的 socks5 代理 在 windows 环境中，网上以前的经验是使用一个软件把 ss 的 socks5 代理转成 http 代理，然后使用 set http_proxy=http://127.0.0.1:1081 这样来达到目的。\n实际上不需要那么麻烦，经过测试，go get命令直接就可以支持 socks5 代理。\n新建一个批处理 goget.bat，放到 PATH 环境下。脚本如下：\n1 2 3 4 5 6 7 8 9 10  @echo off\rset http_proxy=socks5://127.0.0.1:1080\rset https_proxy=socks5://127.0.0.1:1080\rgo get -u -v %*\recho ...\rpause\r  使用的时候直接打开命令行输入 goget golang.org/x/crypto 来看看效果。\n1 2 3 4 5 6 7 8  e:\\project\\go\\src\u0026gt;goget golang.org/x/crypto\r Fetching https://golang.org/x/crypto?go-get=1\rParsing meta tags from https://golang.org/x/crypto?go-get=1 (status code 200)\rget \u0026#34;golang.org/x/crypto\u0026#34;: found meta tag get.metaImport{Prefix:\u0026#34;golang.org/x/crypto\u0026#34;, VCS:\u0026#34;git\u0026#34;, RepoRoot:\u0026#34;https://go.googlesource.com/crypto\u0026#34;} at https://golang.org/x/crypto?go-get=1\rgolang.org/x/crypto (download)\rpackage golang.org/x/crypto: no Go files in E:\\project\\go\\src\\golang.org\\x\\crypto\r...\r请按任意键继续. . .\r  这下完美了。\n"
+},
+{
+	"uri": "https://ybilly.com/about/",
+	"title": "关于",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+}]
