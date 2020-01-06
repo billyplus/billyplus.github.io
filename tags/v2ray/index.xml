@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>v2ray on 长孙叔叔的次世界</title>
+    <link>https://ybilly.com/tags/v2ray/</link>
+    <description>Recent content in v2ray on 长孙叔叔的次世界</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 06 Jan 2019 17:25:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ybilly.com/tags/v2ray/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>通用翻墙脚本</title>
+      <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
+      <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
+      
+      <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
+      <description>&lt;h1 id=&#34;通用的翻墙脚本&#34;&gt;通用的翻墙脚本&lt;/h1&gt;
+
+&lt;p&gt;比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的&lt;code&gt;http_proxy&lt;/code&gt;或者&lt;code&gt;https_proxy&lt;/code&gt;，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。&lt;/p&gt;
+
+&lt;p&gt;参考&lt;a href=&#34;https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759&#34;&gt;ZeppLu&lt;/a&gt;的方案。&lt;/p&gt;
+
+&lt;h1 id=&#34;windows下的方案&#34;&gt;Windows下的方案&lt;/h1&gt;
+
+&lt;p&gt;在&lt;code&gt;PATH&lt;/code&gt;目录下新建一个&lt;code&gt;proxy.bat&lt;/code&gt;的批处理&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;p&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; off
+
+&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;http_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;socks5://127.0.0.1:1080
+&lt;span class=&#34;k&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;https_proxy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;127.0.0.1:1081
+
+&lt;span class=&#34;nv&#34;&gt;%*&lt;/span&gt;
+
+&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; ...
+
+pause&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

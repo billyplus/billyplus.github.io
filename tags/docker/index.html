@@ -1,1072 +1,407 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="zh-CN" data-theme="light">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# fb: http://ogp.me/ns/fb#"><meta name="theme-color" content="#fff" />
+        <script>
+            const theme = localStorage.getItem('theme');
+            if (theme === "dark") {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000');
+            } else if (theme === "light") {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+            }
+        </script>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>docker – Billy&#39;s</title>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta name="generator" content="Hugo 0.58.3" />
+
+    <title>标签: docker | 长孙叔叔的次世界</title>
+
+    <link rel="stylesheet" href="/css/meme.min.css" data-instant-track /><style data-instant-track>html[data-theme='dark'] .post img {filter:invert(85%) hue-rotate(180deg)}.post p {text-align:justify;text-justify:distribute}</style>
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i|Cinzel+Decorative:700&display=swap&subset=chinese-simplified" rel="stylesheet" />
+
+    <meta name="author" content="Billy Yuan" />
+    <meta name="description" content="MemE is a powerful and highly customizable GoHugo blog theme." />
+    <meta name="keywords" content="vps, 使用经验, 学习vue, docker, elementui, golang, linux, shadowsocks, typescript, v2ray, vps, vue, vultr, webpack, wps, 促销, 翻墙, 观察者模式, 订阅-发布模式, 软件模式" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="长孙叔叔的次世界" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="长孙叔叔的次世界" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
     
 
-
-<script defer src="/js/fuse.min.94c78ad70b02749822921660cf4e9f0b3701bc0680c421afb784a78228de0275.js"></script>
-
-<script>
-  
-  var baseurl = null;
-  
-  var siteBaseURL = JSON.parse("\"https://ybilly.com/\"");
-  var siteBaseChecker = /\/\w+\//i;
-  var isSlug = siteBaseChecker.test(siteBaseURL);
-  
-  var runSearch = function() {
     
-        var hasLangPostfix = location.pathname.includes("/zh-cn");
-        if (hasLangPostfix) {
-          if (isSlug) {
-            baseurl = location.origin + siteBaseURL.match(siteBaseChecker)[0] + "zh-cn";
-          } else {
-            baseurl = location.origin + "/zh-cn";
-          }
-        } else {
-          if (isSlug) {
-            baseurl = location.origin + siteBaseURL.match(siteBaseChecker)[0];
-          } else {
-            baseurl = location.origin;
-          }
+    <link rel="canonical" href="https://ybilly.com/tags/docker/" />
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "datePublished": "1969-07-20T20:17:43+00:00",
+        "dateModified": "2019-04-08T10:10:51+08:00",
+        "url": "https://ybilly.com/tags/docker/",
+        "name": "标签: docker",
+        "description": "MemE is a powerful and highly customizable GoHugo blog theme.",
+        "keywords": "vps, 使用经验, 学习vue, docker, elementui, golang, linux, shadowsocks, typescript, v2ray, vps, vue, vultr, webpack, wps, 促销, 翻墙, 观察者模式, 订阅-发布模式, 软件模式",
+        "image": "https://ybilly.com/icons/apple-touch-icon.png",
+        "publisher": {
+            "@type": "Organization",
+            "name": "长孙叔叔的次世界",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://ybilly.com/icons/apple-touch-icon.png"
+            },
+            "url": "https://ybilly.com/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://ybilly.com/"
         }
-    
-
-    var searchResults = null;
-    var searchMenu = null;
-    var searchText = null;
-    
-    
-    var enableSearchHighlight = JSON.parse("true");
-
-    var fuse = null;
-
-    function endsWith(str, suffix) {
-      return str.indexOf(suffix, str.length - suffix.length) !== -1;
     }
-
-    function initFuse() {
-      if (!endsWith(baseurl, "/")) {
-        baseurl = baseurl + '/';
-      };
-
-      $.ajax({
-        type: "GET",
-        url: baseurl + "index.json",
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-      })
-        .done(function (index) {
-          fuse = new Fuse(index, {
-            keys: ['title', 'description', 'content'],
-            includeMatches: enableSearchHighlight,
-            shouldSort: true,
-            threshold: 0.4,
-            location: 0,
-            distance: 100,
-            maxPatternLength: 32,
-            minMatchCharLength: 1,
-          });
-        })
-        .fail(function (jqxhr, textStatus, error) {
-          var err = textStatus + ", " + error;
-          console.error("Error getting Hugo index file:", err);
-        });
-    }
-
-    function renderSearchResults(results) { 
-      searchResults = document.getElementById('search-results');
-      searchMenu = document.getElementById('search-menu');
-      searchResults.setAttribute('class', 'dropdown is-active');
-
-      var content = document.createElement('div');
-      content.setAttribute('class', 'dropdown-content search-content');
-
-      if (results.length > 0) {
-        results.forEach(function (result) {
-          var item = document.createElement('a');
-          item.setAttribute('href', result.uri);
-          item.setAttribute('class', 'dropdown-item');
-          item.innerHTML = `<div class="menu-item"><div class="menu-item__title">📄 ${result.title}</div><div class="menu-item__desc">${result.description ? result.description : result.content}</div></div>`;
-          content.appendChild(item);
-        });
-      } else {
-        var item = document.createElement('span');
-        item.setAttribute('class', 'dropdown-item');
-        item.innerText = 'No results found';
-        content.appendChild(item);
-      }
-
-      while (searchMenu.hasChildNodes()) {
-        searchMenu.removeChild(
-          searchMenu.lastChild
-        );
-      }
-      searchMenu.appendChild(content);
-    }
-
-    function renderSearchHighlightResults(results) {      
-      searchResults = document.getElementById('search-results');
-      searchMenu = document.getElementById('search-menu');
-      searchResults.setAttribute('class', 'dropdown is-active');
-
-      var content = document.createElement('div');
-      content.setAttribute('class', 'dropdown-content search-content');
-
-      if (results.length > 0) {
-        results.forEach(function (result) {
-          var item = document.createElement('a');
-          item.setAttribute('href', result.item.uri);
-          item.setAttribute('class', 'dropdown-item');
-          item.innerHTML = `<div class="menu-item"><div class="menu-item__title">📄 ${generateHighlightedText(result.item.title, result.matches[0].indices)}</div><div class="menu-item__desc">${result.matches[1] ? generateHighlightedText(result.item.description, result.matches[1].indices) : result.matches[2] ? generateHighlightedText(result.item.content, result.matches[2].indices) : ''}</div></div>`;
-          content.appendChild(item);
-        });
-      } else {
-        var item = document.createElement('span');
-        item.setAttribute('class', 'dropdown-item');
-        item.innerText = 'No results found';
-        content.appendChild(item);
-      }
-
-      while (searchMenu.hasChildNodes()) {
-        searchMenu.removeChild(
-          searchMenu.lastChild
-        );
-      }
-      searchMenu.appendChild(content);
-    }
-
-    function renderSearchResultsMobile(results) {
-      searchResults = document.getElementById('search-mobile-results');
-
-      var content = document.createElement('div');
-      content.setAttribute('class', 'mobile-search__content');
-
-      if (results.length > 0) {
-        results.forEach(function (result) {
-          var item = document.createElement('a');
-          item.setAttribute('href', result.uri);
-          item.innerHTML = `<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ${result.title}</div><div class="mobile-search__item--desc">${result.description ? result.description : result.content}</div></div>`;
-          content.appendChild(item);
-        });
-      } else {
-        var item = document.createElement('span');
-        content.appendChild(item);
-      }
-
-      $('#search-mobile-results').empty();
-      searchResults.appendChild(content);
-    }
-
-    function renderSearchHighlightResultsMobile(results) {
-      searchResults = document.getElementById('search-mobile-results');
-
-      var content = document.createElement('div');
-      content.setAttribute('class', 'mobile-search__content');
-
-      if (results.length > 0) {
-        results.forEach(function (result) {
-          var item = document.createElement('a');
-          item.setAttribute('href', result.item.uri);
-          item.innerHTML = `<div class="mobile-search__item"><div class="mobile-search__item--title">📄 ${generateHighlightedText(result.item.title, result.matches[0].indices)}</div><div class="mobile-search__item--desc">${result.matches[1] ? generateHighlightedText(result.item.description, result.matches[1].indices) : result.matches[2] ? generateHighlightedText(result.item.content, result.matches[2].indices) : ''}</div></div>`;
-          content.appendChild(item);
-        });
-      } else {
-        var item = document.createElement('span');
-        content.appendChild(item);
-      }
-
-      $('#search-mobile-results').empty();
-      searchResults.appendChild(content);
-    }
-
-    function generateHighlightedText(text, regions) {
-      if(!regions) return text;
-      
-      var content = '', nextUnhighlightedRegionStartingIndex = 0;
-
-      regions.forEach(function(region) {
-        content += '' +
-          text.substring(nextUnhighlightedRegionStartingIndex, region[0]) +
-          '<span class="search__highlight">' +
-            text.substring(region[0], region[1] + 1) +
-          '</span>' +
-        '';
-        nextUnhighlightedRegionStartingIndex = region[1] + 1;
-      });
-
-      content += text.substring(nextUnhighlightedRegionStartingIndex);
-
-      return content;
-    };
-
-    initFuse();
-
-    $("#search").on('input', function (e) {
-      if (!e.target.value) {
-        $('#search-results').attr('class', 'dropdown');
-        return null;
-      }
-
-      if ($(window).width() < 770) {
-        return null;
-      } 
-
-      searchText = e.target.value;
-      var results = fuse.search(e.target.value);
-      if (enableSearchHighlight) {
-        renderSearchHighlightResults(results);
-      } else {
-        renderSearchResults(results);
-      }
-    });
-
-    $('#search').on('blur', function () {
-      if ($(window).width() < 770) {
-        return null;
-      }
-      setTimeout(function () {
-        $('#search-results').attr('class', 'dropdown');
-      }, 100);
-    });
-
-    $('#search').on('click', function (e) {
-      if ($(window).width() < 770) {
-        return null;
-      }
-      if (!e.target.value) {
-        $('#search-results').attr('class', 'dropdown');
-        return null;
-      }
-      
-      searchText = e.target.value;
-      var results = fuse.search(e.target.value);
-      if (enableSearchHighlight) {
-        renderSearchHighlightResults(results);
-      } else {
-        renderSearchResults(results);
-      }
-    });
-
-    $('#search').on('keydown', function (e) {
-      if ($(window).width() < 770) {
-        return null;
-      }
-      var items = $('#search-menu .dropdown-item');
-      var activeIndex = $('#search-menu .dropdown-item.is-active').index();
-
-      items.removeClass('is-active');
-      if (e.key === 'ArrowDown') {
-        items.eq(activeIndex + 1).addClass('is-active');
-      } else if (e.key === 'ArrowUp') {
-        items.eq(activeIndex - 1).addClass('is-active');
-      } else if (e.key === 'Enter') {
-        var currentItemLink = items.eq(activeIndex).attr('href');
-        if (currentItemLink) {
-          location.href = currentItemLink;
-        }
-      }
-    });
-
-    $("#search-mobile").on('input', function(e) {
-      if (!e.target.value) {
-        $('#search-mobile-results').empty();
-        return null;
-      }
-
-      searchText = e.target.value;
-      var results = fuse.search(e.target.value);
-      renderSearchResultsMobile(results);
-      if (enableSearchHighlight) {
-        renderSearchHighlightResultsMobile(results);
-      } else {
-        renderSearchResultsMobile(results);
-      }
-    });
-  }
-</script>    
-    
-
-
-<link rel="stylesheet" href="/css/main.min.css">
-
-
-
-  
-  
-    
-    <link rel="stylesheet" href="/scss/zzo.min.css">
-  
-
-
-    <meta name="description" content="" />
-<meta name="keywords" content="">
-<meta name="created" content="2018-11-15T15:28:58&#43;0000">
-<meta name="modified" content="2020-01-06T17:10:49&#43;0800">
-
-
-<meta property="og:site_name" content="Billy&#39;s">
-<meta property="og:title" content="docker">
-<meta property="og:url" content="https://ybilly.com/tags/docker/">
-<meta property="og:type" content="website">
-
-<meta name="generator" content="Hugo 0.62.2" />
-<meta name="msapplication-TileColor" content="#fff">
-<meta name="theme-color" content="#fff">
-<link rel="canonical" href="https://ybilly.com/tags/docker/">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/logo.svg" sizes="any" type="image/svg+xml" />
-<link rel="manifest" href="/manifest.json">
-
-
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "url" : "https://ybilly.com/tags/docker/",
-    "name": "docker",
-    "description": "思考",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://ybilly.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Billy's",
-      "url": "https://ybilly.com/"
-    }
-  }
 </script>
 
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-121801373-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-121801373-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:site" content="@reuixiy" />
+
+    
+
+
+
+
+
+
+<meta property="og:title" content="标签: docker" />
+<meta property="og:description" content="MemE is a powerful and highly customizable GoHugo blog theme." />
+<meta property="og:url" content="https://ybilly.com/tags/docker/" />
+<meta property="og:site_name" content="长孙叔叔的次世界" />
+<meta property="og:locale" content="zh-CN" /><meta property="og:image" content="https://ybilly.com/icons/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+        
 
 
     
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121801373-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121801373-1');
+    </script>
+
+
+
 </head>
 
-<body id="root" class="theme__dark">
-    <script>
-        var localTheme = localStorage.getItem('theme');
-        if (localTheme) {
-            document.getElementById('root').className = `theme__${localTheme}`;
-        }        
-    </script>    
-    
-    <div id="body">
-        
-        <div class="container wrapper">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar__brand">
-    
-    <a href="/" title="" rel="home" class="navbar__logo-link">
-      <img data-src="/logo.png" src="data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='48px' height='48px'%3E%3Cpath fill='%2337474f' d='M24.648,4l0.29,0.002c0.52,0.008,1.23,0.109,1.857,0.198c0.314,0.045,0.616,0.088,0.883,0.119 c0.164,0.024,0.715,0.227,1.043,0.348C29.468,4.941,32,6.875,32,6.875L31,5c0,0,1.563,0.445,2.125,0.875C34.247,6.733,34.354,7,35,7 h0.375L35,6c0.375,0.19,1.78,1.289,1.968,1.541L37,7.583l0.036,0.039c1.411,1.495,2.095,2.462,2.595,3.169 c0.339,0.48,0.945,0.822,1.243,1.21C41.225,12.454,42,14,42,14v-0.998c0,0,0.776,1.029,1.25,2.373C44,17.5,44,19,44,19 s-0.25-0.625-1-0.875C43,19,44,21,44,24.002v6c-0.74,0.57-0.989,1.443-1.214,2.386c-0.328,1.372-0.605,2.294-1.444,2.593L41,35.002 l-0.08,0.277c-0.533,0.662-0.994,1.351-1.439,2.018c-1.446,2.163-2.495,3.705-4.481,3.705c-1.041,0-2.044,0.167-2.441,0.559 C32.128,41.987,32,42.662,32,43.002c-1.012,0.377-2.167,1-8,1c-5,0-9.4-1.756-12.262-4.545c-0.965-0.785-2.272-1.669-2.857-2.273 C6.976,35.593,6.047,33.058,6,33.002c1.184,0.985,5.245,4.636,7.091,4.636l0,0C13.301,37.416,12,35.684,12,35.002 C13.429,37.162,17.405,40,23,40c4.125,0,3.892-0.73,6-1c4.875-0.625,7.492-5.439,8.214-6.816c0.05-0.096,0.202-1.02,0.24-1.092 c0.368-0.376,0.463-1.167,0.607-2.371C38.17,27.815,39,26.75,39,25.625S38,24,38,24s0-3-0.625-5.375 C37.25,18.151,36.738,16.409,34,13v1.002c-2.125-1.127-3.668-2.545-4.125-2.752C28.435,10.599,26.831,10,25,10c-4,0-4.625,1-8,2 c0,0,1.25,0,2,0c0,0-1.867,1.445-3,2.125c-1.875,1.125-4,5.034-4,7.875c0,3-2.485,4-4,4c-2.453,0-4-2-4-4 c0-1.133,0.45-2.5,0.886-3.425c0.411-0.873,0.799-1.697,0.795-2.581c0.031-0.106,0.274-0.383,0.435-0.566 c0.466-0.531,1.083-1.234,1.224-2.252c1.106-0.927,3.13-3.015,3.155-3.041c0.162-0.171,0.324-0.304,0.511-0.457 c0.324-0.265,0.728-0.594,1.221-1.205l0.423-0.525c0.798-0.428,2.222-1.035,2.776-1.271c0.342-0.146,0.602-0.258,0.716-0.313 L19.75,5.75C19.966,5.75,20,5.238,20,5c0-0.227,0.106-0.198,0.324-0.273C22.139,4.099,22.799,4,24.648,4L24.648,4'/%3E%3C/svg%3E" alt="Home" class="lazyload navbar__logo">
-    </a>
-    
-    <a href="/" title="" rel="home" class="navbar__title-link">
-      <h6 class="navbar__title">Billy</h6>
-    </a>    
-  </div>
-  
-  
-<div class="theme-mobile">
-  <div class="dropdown">
-    <button class="dropdown-trigger navbar__slide-down" aria-label="Invert Colors" style="">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
-    </button>
-    <div class="dropdown-content select-theme">
-      
-        
-        <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          light
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          hacker
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          solarized
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          custom
-        </a>
-        
-      
-    </div>
-  </div>
-</div>
-
-  
-<div id="mobileSearchBtn" class="mobile-search__btn">
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-</div>
-
-<div id="search-mobile-container" class="mobile-search hide">
-  <div class="mobile-search__top">
-    <input id="search-mobile" type="text" aria-label="Mobile Search" placeholder="" class="mobile-search__top--input"/>
-    <div id="search-mobile-close" class="mobile-search__top--icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path opacity=".87" fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z"/></svg>
-    </div>
-  </div>
-  <div id="search-mobile-results" class="mobile-search__body">
-    
-  </div>
-</div>
-
-  
-  <a role="button" class="navbar__burger" aria-label="menu" aria-expanded="false">
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-  </a>  
-
-  <div class="navbar__menu">
-    
-<div class="theme">
-  <div class="dropdown">
-    <button class="dropdown-trigger navbar__slide-down" aria-label="Select Theme Button">
-      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="none" d="M24 0H0v24h24V0z"/><path fill="currentColor" d="M6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58s4.1-.78 5.66-2.34c3.12-3.12 3.12-8.19 0-11.31l-4.95-4.95c-.39-.39-1.02-.39-1.41 0L6.34 7.93zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"/></svg>      
-    </button>
-    <div class="dropdown-content select-theme">
-      
-        
-        <a href="#" class="dropdown-item select-theme__item is-active">
-          dark
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          light
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          hacker
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          solarized
-        </a>
-        
-        <a href="#" class="dropdown-item select-theme__item ">
-          custom
-        </a>
-        
-      
-    </div>
-  </div>
-</div>
-
-    
-    
-      
-      
-      
-      
-      
-        <a href="/about" class="navbar__menu-item navbar__slide-down ">关于</a>
-      
-    
-      
-      
-      
-      
-      
-        <a href="/posts" class="navbar__menu-item navbar__slide-down ">文章</a>
-      
-    
-      
-      
-      
-      
-      
-        <div class="navbar__dropdown navbar__slide-down">
-          <a href="/gallery" class="navbar__menu-item ">
-            系列
-            <span class="navbar__menu-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 9.29L12 13.17l3.88-3.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-4.59 4.59c-.39.39-1.02.39-1.41 0L6.7 10.7c-.39-.39-.39-1.02 0-1.41.39-.38 1.03-.39 1.42 0z"/></svg>
-            </span>
-          </a>        
-          <div class="navbar__dropdown--content">
+    <body>
+        <div class="container">
             
-            <a href="/gallery/golang-in-21-days" class="navbar__dropdown--item">21天精通golang</a>        
+    <header class="header">
+        <div class="site-brand">
             
-          </div>
+            <a href="/" class="brand">长孙叔叔的次世界</a>
+            
         </div>
-      
-    
-      
-      
-      
-      
-      
-        <a href="/archive" class="navbar__menu-item navbar__slide-down ">归档</a>
-      
-    
-  </div>
-</nav>
-            
-            
-
-
-<script src="/js/enquire.min.72cb9edeb1ca1b92f5bf9df8d31a1ecd1e423d0b5e0f48a2a208b020dd5053fa.js"></script>
-
-<main class="main-main">
-  <nav class="breadcrumb" aria-label="breadcrumbs">
-  <ol>
-    
-  
-  
-  
-  
-  
-  <li >    
-    
-      <a href="https://ybilly.com/">Billy&#39;s</a>
-        
-  </li>
-  
-  
-  <li >    
-    
-      <a href="https://ybilly.com/tags/">标签</a>
-        
-  </li>
-  
-  
-  <li  class="is-active" >    
-    
-      <a href="https://ybilly.com/tags/docker/">docker</a>
-        
-  </li>
-  
-  </ol>
-  
-</nav>
-  <article class="list">
-    <header class="list__header">
-      <h5 class="list__header--title h5">docker</h5>
     </header>
-    
-    <div class="list__header--desc p2">
-      
-    </div>
 
-    <div class="summary__container">
-      
-      
-  <article class="summary-classic">
-  <div class="summary-classic__flex-box">
-    
-    
-    <div class="summary-classic__content">
-      <header>
-        <h5 class="title h5"><a href='https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/'> docker容器的迁移</a> </h5>
-        <h6 class="subtitle caption"><span title="">📅   </span>  <span title=""> &middot; ☕1  </span></h6>
-      </header>
-      <div>
-        <div class="summary-classic__text p2">
-          
-          <p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
-<p>另外准备了一台 1G 内存的<code>vps</code>，需要做的事情就是把以前的<code>数据库</code>、<code>git数据</code>、各种东西迁移过去。所幸全部应用都已经用<code>docker</code>实现了容器化，有用数据都放在<code>volume</code>里面。迁移起来非常方便。</p>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr />
-</article>
-
-      
-    </div>
-  </article>
-
-  
-
-
-</main>
-<aside class="main-side">
-  
-
-<div class="sidebar">
-    
-
-<div class="search">
-  <span class="icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-  </span>
-  <input id="search" aria-label="Site Search" class="input" type="text" placeholder="" autocomplete="off">
-  <div id="search-results" class="dropdown">
-    <div id="search-menu" class="dropdown-menu" role="menu">
-    </div>
-  </div>
-</div>
-
-
-    
-    
-    
-    <section class="sidebar-recent">
-        <a href="/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/" class="sidebar-recent__title p1">docker容器的迁移</a>
-        <ul class="sidebar-recent__ul">
+            
+    <nav class="nav">
+        <ul class="menu" id="menu">
+            
+            
+                <li class="menu-item"><a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon menu-item-icon"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><span class="menu-item-name">首页</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/archives/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">归档</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M512 256c0 141.2-114.7 256-256 256C114.8 512 0 397.3 0 256S114.7 0 256 0s256 114.7 256 256zm-32 0c0-123.2-100.3-224-224-224C132.5 32 32 132.5 32 256s100.5 224 224 224 224-100.5 224-224zM160.9 124.6l86.9 37.1-37.1 86.9-86.9-37.1 37.1-86.9zm110 169.1l46.6 94h-14.6l-50-100-48.9 100h-14l51.1-106.9-22.3-9.4 6-14 68.6 29.1-6 14.3-16.5-7.1zm-11.8-116.3l68.6 29.4-29.4 68.3L230 246l29.1-68.6zm80.3 42.9l54.6 23.1-23.4 54.3-54.3-23.1 23.1-54.3z"/></svg><span class="menu-item-name">文章</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
+                </li>
+            
+                <li class="menu-item active"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
+                </li>
             
         </ul>
-    </section>
-    
-    
-</div>
+    </nav>
 
-<hr class="hr-fade sidebar-hr" />
-<div class="taxo-root">
+            
+            
+    
+        
+            
+        
+        
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+    
 
-<div class="taxo">
-    <section>
-        <span class="title p2">
-            <a href="/tags/" class="taxo__title">
+            
+    
+        <main class="main list" id="main">
+            <div class="main-inner">
+                <div class="content list-group">
+                    
+                        
+                        
+                            <h1 class="list-title">docker</h1>
+                        
+                    
+
+                    
+                    
+
+                    
+                    
+                    
+
+                    
+                    
+                        
+                        
+                    
+
+                    
+                    
+                    
+                        <ul class="list-part">
+                            
+                                
+                                
+                            
+                            
+                            
+                                
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                
+                                
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                
+                                
+                            
+                            
+                            <h2 class="list-year">二〇一八<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="icon chinese-zodiac"><path d="M346 553q-4 17-17 70 38-1 66-9 13-4 27-10 16-8 34-21 31-22 91-68 32-25 53-59 22-33 31-65t12-58q3-25 3-44 0-5-1-15 10-3 20-8 9-5 15-9 4-3 11-9 3-2 10-9-24-24-47-34-22-9-37-4-14 5-26 13-12 7-18 17-1 3-5 8h-20q-24-13-63-16t-64 0q-9 1-26 3-4-25-17-35t-29-8q-15 2-30 7-14 5-25 11-4 3-10 7 2 24 43 24-8 97-58 133-8-1-24-2-13-1-18-3h-6q-4-12-9-21-5-10-11-13-4-1-12-5-5-2-8-1h-3q-17 1-26 23-10 21-11 51v5q0 27 10 55 10 31 27 54 39 45 168 45zm99-222q1-11 6-16 4-5 11-8h2l1 1q5 3 8 11t3 16v8q-3 11-19 17-13-6-12-29zm-95-12q10-7 18-2 7 5 8 31 0 15-22 23h-5q-1-3-4-14-2-7-2-15 0-9 1-14t6-9zm-33 252q-17-1-68-5-24 34-25 53 0 3-1 8-1 6 0 11 1 4-1 9t1 10 3 8 5 8q6 6 8 4 2-1 12 0 10 2 15-3 25-9 37-34 12-26 13-48 1-7 1-21zm276-74l-9 12q-6 7-26 26-19 20-43 37-23 17-58 37-35 19-74 32-61 142-77 181-8 21-12 34-4 12-9 33-5 22-3 35 2 14 11 23 18 15 61-47 43-63 68-121l15 9q-7 12-16 31-9 18-24 56-14 38-10 54 8 35 29 36 33 1 67-92 7-18 21-55 0 2 2 7 1 4 6 18 5 15 12 26t22 26q14 14 33 23 1-5 4-16 2-9 6-18 4-8 10-18t13-20q8-9 17-17t21-11q13-3 27-4t32 6q-4 0-12 1t-25 6q-18 5-31 15-13 11-25 33-11 23-9 50h-3q-2 1-8 2l-12 4q-4 1-14 4-8 2-15 5t-14 5-12 6q-4 4-9 7t-3 7q0 6 1 10 1 5 6 9t16 8q10 4 29 5 20 1 47 1 28 0 70-5t97-10q36-5 44-45 9-40-4-82-12-42-27-68-5-8-23-30-17-21-38-45-20-23-44-54-23-31-43-57-19-27-36-57-16-29-19-48zm312 184q-8 9-23 19-16 10-30 18-10 6-29 17-14 8-23 10-3 2-8 5 11 4 20 22 9 17 10 29 1 13 3 15 8 2 13 2t7-1q1-1 3-1 60-27 60-98 0-9-1-19 0-6-2-18z"/></svg></h2>
+                            
+                                
+                                    
+                                        
+                                        
+                                    
+                                    
+                                    <h3 class="list-month">十一月</h3>
+                                    
+    <li class="list-item">
+        <a href="/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/" class="list-item-title">docker容器的迁移</a>
+        <time datetime="2018-11-23T18:59:00+00:00" class="list-item-time">November 23</time>
+    </li>
+
+                                
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </main>
+    
+
+            
+    <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            
                 
-            </a>
-        </span>
-        
-        
-            <span class="tag">
-                <a href="/tags/docker/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        docker
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/golang/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        golang
-                    </span>
-                    <span class="taxo__num">
-                        3
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/linux/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        linux
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/shadowsocks/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        shadowsocks
-                    </span>
-                    <span class="taxo__num">
-                        2
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/v2ray/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        v2ray
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/vps/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        vps
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/vultr/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        vultr
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/wps/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        wps
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/%E4%BF%83%E9%94%80/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        促销
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/%E7%BF%BB%E5%A2%99/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        翻墙
-                    </span>
-                    <span class="taxo__num">
-                        2
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        观察者模式
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        订阅-发布模式
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/" class="is-tags taxo__link">
-                    <span class="taxo__text">
-                        软件模式
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-    </section>
-</div>
+            
+            
 
-
-<div class="taxo">
-    <section>
-        <span class="title p2">
-            <a href="/categories/" class="taxo__title">
+            
                 
-            </a>
-        </span>
-        
-        
-            <span class="tag">
-                <a href="/categories/vps/" class="is-categories taxo__link">
-                    <span class="taxo__text">
-                        vps
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-        
-            <span class="tag">
-                <a href="/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/" class="is-categories taxo__link">
-                    <span class="taxo__text">
-                        使用经验
-                    </span>
-                    <span class="taxo__num">
-                        5
-                    </span>
-                </a>
-            </span>
-        
-        
-    </section>
-</div>
+            
+            
 
-
-<div class="taxo">
-    <section>
-        <span class="title p2">
-            <a href="/series/" class="taxo__title">
+            
                 
-            </a>
-        </span>
-        
-        
-            <span class="tag">
-                <a href="/series/golang-in-21-days/" class="is-series taxo__link">
-                    <span class="taxo__text">
-                        golang-in-21-days
-                    </span>
-                    <span class="taxo__num">
-                        1
-                    </span>
-                </a>
-            </span>
-        
-        
-    </section>
-</div>
+            
+            
 
-</div>
-
-
-</aside>
-<script>
-  enquire.register("screen and (max-width: 769px)", {
-    match: function () {
-      if (document.getElementsByTagName('main')[0]) {
-        document.getElementsByTagName('main')[0].className = "main";
-      }
-      if (document.getElementsByTagName('aside')[0]) {
-        document.getElementsByTagName('aside')[0].className = "hide";
-      }
-    },
-    unmatch: function () {
-      if (document.getElementsByTagName('main')[0]) {
-        document.getElementsByTagName('main')[0].className = "main-main";
-      }
-      if (document.getElementsByTagName('aside')[0]) {
-        document.getElementsByTagName('aside')[0].className = "main-side";
-      }
-      document.getElementsByClassName('navbar__burger')[0].classList.remove('is-active');
-      document.getElementsByClassName('navbar__menu')[0].classList.remove('is-active');
-      document.getElementsByClassName('mobile-search')[0].classList.add('hide');
-    },
-    setup: function () { },
-    deferSetup: true,
-    destroy: function () { },
-  });
-</script>
-
-<script defer src="/js/jquery.min.0925e8ad7bd971391a8b1e98be8e87a6971919eb5b60c196485941c3c1df089a.js"></script>
-
-<script defer src="/js/enquire.min.72cb9edeb1ca1b92f5bf9df8d31a1ecd1e423d0b5e0f48a2a208b020dd5053fa.js"></script>
-
-<script defer src="/js/lazysizes.min.31dd6a2d3a1ec0f78a8df007535cf23f03aeb5c70f026e6d6a19dac3b3acc340.js"></script>
-
-<script defer src="/js/zzo.min.815b3fb123d050336929844ca1ba3dff615a7c7d331ebe919b787e0dafc1a8ac.js"></script>
-
-<script>
-  window.onload = function() {
-    
-    runSearch();
-  }
-</script>
+            <div class="site-info">© 1969–2019<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>Billy Yuan</div>
 
             
-            <footer class="footer">
-    
-<div class="dropdown">
-  <button class="dropdown-trigger" aria-label="Select Theme Button">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M12.65 15.67c.14-.36.05-.77-.23-1.05l-2.09-2.06.03-.03c1.74-1.94 2.98-4.17 3.71-6.53h1.94c.54 0 .99-.45.99-.99v-.02c0-.54-.45-.99-.99-.99H10V3c0-.55-.45-1-1-1s-1 .45-1 1v1H1.99c-.54 0-.99.45-.99.99 0 .55.45.99.99.99h10.18C11.5 7.92 10.44 9.75 9 11.35c-.81-.89-1.49-1.86-2.06-2.88-.16-.29-.45-.47-.78-.47-.69 0-1.13.75-.79 1.35.63 1.13 1.4 2.21 2.3 3.21L3.3 16.87c-.4.39-.4 1.03 0 1.42.39.39 1.02.39 1.42 0L9 14l2.02 2.02c.51.51 1.38.32 1.63-.35zM17.5 10c-.6 0-1.14.37-1.35.94l-3.67 9.8c-.24.61.22 1.26.87 1.26.39 0 .74-.24.88-.61l.89-2.39h4.75l.9 2.39c.14.36.49.61.88.61.65 0 1.11-.65.88-1.26l-3.67-9.8c-.22-.57-.76-.94-1.36-.94zm-1.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
-  </button>
-  <div class="dropdown-content">
-    
-    
-    
-      
-      
-        
-        
-          
+                <div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank">MemE</a></div>
             
-              <a href="https://ybilly.com/tags/docker/" data-lang="zh-cn" class="dropdown-item is-active">中文</a>
+
             
-          
-        
-      
-        
-      
-    
-  </div>
-</div>
+                <div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a></div>
+            
+
+            
+        </div>
+    </footer>
+
+        </div>
+    </body>
+    <script src="/js/meme.min.js" data-no-instant></script><script data-no-instant>InstantClick.init();</script>
 
     
-<div class="footer__social">
-  <div class="social">
-    
-            
-    
-            
-    
-      
-      <a href="mailto:me@ybilly.com" title="email" aria-label="email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25c-.25-.16-.4-.43-.4-.72 0-.67.73-1.07 1.3-.72L12 11l6.7-4.19c.57-.35 1.3.05 1.3.72 0 .29-.15.56-.4.72z"/></svg>
-      </a>
-            
-    
-            
-    
-      
-      <a href="https://github.com/billyplua" title="github" aria-label="github">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 24 24" version="1.1">
-<g id="surface3680">
-<path fill="currentColor" d="M 10.898438 2.101562 C 6.300781 2.601562 2.601562 6.300781 2.101562 10.800781 C 1.601562 15.5 4.300781 19.699219 8.398438 21.300781 C 8.699219 21.398438 9 21.199219 9 20.800781 L 9 19.199219 C 9 19.199219 8.601562 19.300781 8.101562 19.300781 C 6.699219 19.300781 6.101562 18.101562 6 17.398438 C 5.898438 17 5.699219 16.699219 5.398438 16.398438 C 5.101562 16.300781 5 16.300781 5 16.199219 C 5 16 5.300781 16 5.398438 16 C 6 16 6.5 16.699219 6.699219 17 C 7.199219 17.800781 7.800781 18 8.101562 18 C 8.5 18 8.800781 17.898438 9 17.800781 C 9.101562 17.101562 9.398438 16.398438 10 16 C 7.699219 15.5 6 14.199219 6 12 C 6 10.898438 6.5 9.800781 7.199219 9 C 7.101562 8.800781 7 8.300781 7 7.601562 C 7 7.199219 7 6.601562 7.300781 6 C 7.300781 6 8.699219 6 10.101562 7.300781 C 10.601562 7.101562 11.300781 7 12 7 C 12.699219 7 13.398438 7.101562 14 7.300781 C 15.300781 6 16.800781 6 16.800781 6 C 17 6.601562 17 7.199219 17 7.601562 C 17 8.398438 16.898438 8.800781 16.800781 9 C 17.5 9.800781 18 10.800781 18 12 C 18 14.199219 16.300781 15.5 14 16 C 14.601562 16.5 15 17.398438 15 18.300781 L 15 20.898438 C 15 21.199219 15.300781 21.5 15.699219 21.398438 C 19.398438 19.898438 22 16.300781 22 12.101562 C 22 6.101562 16.898438 1.398438 10.898438 2.101562 Z M 10.898438 2.101562 "/>
-</g>
-</svg>
+        <script data-no-instant>
+            InstantClick.on('change', function () {
+                const theme = localStorage.getItem('theme');
+                if (theme === "dark") {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000');
+                    document.getElementById("theme-toggle").innerHTML = "🌙";
 
-      </a>
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-            
-    
-    
-  <a href="https://ybilly.com/tags/docker//index.xml" type="application/rss+xml" title="rss" aria-label="RSS Feed Link">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><circle fill="currentColor" cx="6.18" cy="17.82" r="2.18"/><path fill="currentColor" d="M5.59 10.23c-.84-.14-1.59.55-1.59 1.4 0 .71.53 1.28 1.23 1.4 2.92.51 5.22 2.82 5.74 5.74.12.7.69 1.23 1.4 1.23.85 0 1.54-.75 1.41-1.59-.68-4.2-3.99-7.51-8.19-8.18zm-.03-5.71C4.73 4.43 4 5.1 4 5.93c0 .73.55 1.33 1.27 1.4 6.01.6 10.79 5.38 11.39 11.39.07.73.67 1.28 1.4 1.28.84 0 1.5-.73 1.42-1.56-.73-7.34-6.57-13.19-13.92-13.92z"/></svg>
-  </a>
+                    var els = [].slice.apply(document.getElementsByClassName("chroma"));
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].className = els[i].className.replace(/ *\bchroma\b/g, "chroma-dark");
+                    }
+                } else if (theme === "light") {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff');
+                    document.getElementById("theme-toggle").innerHTML = "🌞";
 
-  </div>
-</div>
-
-    
-<div id="gtt">
-  <div class="gtt">
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M8.12 14.71L12 10.83l3.88 3.88c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L12.7 8.71c-.39-.39-1.02-.39-1.41 0L6.7 13.3c-.39.39-.39 1.02 0 1.41.39.38 1.03.39 1.42 0z"/></svg>
-  </div>
-</div>
-
-    <hr />
-
-    <div class="footer__poweredby">
-        
-                
-            <p class="caption">
-                
-                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
-                
-            </p>
+                    var els = [].slice.apply(document.getElementsByClassName("chroma-dark"));
+                    for (var i = 0; i < els.length; i++) {
+                        els[i].className = els[i].className.replace(/ *\bchroma-dark\b/g, "chroma");
+                    }
+                }
+            });
+        </script>
+    <script data-no-instant>
+                InstantClick.on('change', function () {
+                    gtag('config', 'UA-121801373-1', {
+                        'page_path': location.pathname + location.search
+                    });
+                });
+            </script>
         
 
-        
-            <p class="caption">Powered by <a href="https://gohugo.io/" rel="noreferrer">Hugo</a> and the <a href="https://github.com/zzossig/hugo-theme-zzo" rel="noreferrer">Zzo theme</a></p>
-        
-    </div> 
-</footer>
-        </div>    
-    </div>
-</body>
+
+    
+
+
+
+
+    <script type="module" data-no-instant>
+        import {Workbox} from 'https://cdn.jsdelivr.net/npm/workbox-cdn@4.3.1/workbox/workbox-window.prod.mjs';
+
+        if ('serviceWorker' in navigator) {
+            const wb = new Workbox('../../sw.js');
+            
+            wb.addEventListener('activated', (event) => {
+                if (event.isUpdate) {
+                    appRefresh ({
+                        text: '已更新最新版本',
+                        action: '点击刷新',
+                        callback: () => location.reload()
+                    })
+                }
+            });
+
+            wb.register();
+        }
+
+        async function appRefresh({text, action, callback}={}) {
+            let themeColor = document.querySelector('meta[name=theme-color]');
+            let dom = document.createElement('div');
+
+            themeColor && (themeColor.content = '#000');
+
+            dom.innerHTML = `
+                <style>
+                    .app-refresh {
+                        background: #000;
+                        height: 0;
+                        line-height: 3em;
+                        overflow: hidden;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 42;
+                        padding: 0 1em;
+                        transition: all .3s ease;
+                    }
+                    .app-refresh-wrap {
+                        display: flex;
+                        color: #fff;
+                    }
+                    .app-refresh-wrap label {
+                        flex: 1;
+                    }
+                    .app-refresh-show {
+                        height: 3em;
+                    }
+                </style>
+                <div class="app-refresh" id="app-refresh">
+                    <div class="app-refresh-wrap" onclick="(${callback})()">
+                        <label>${text}</label>
+                        <span>${action}</span>
+                    </div>
+                </div>
+            `;
+
+            document.body.appendChild(dom);
+
+            setTimeout(function() {
+                document.getElementById('app-refresh').className += ' app-refresh-show';
+            }, 16);
+        }
+    </script>
+
 
 </html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>观察者模式 on 长孙叔叔的次世界</title>
+    <link>https://ybilly.com/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</link>
+    <description>Recent content in 观察者模式 on 长孙叔叔的次世界</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 10 Jul 2018 14:24:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://ybilly.com/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>观察者模式与订阅-发布模式的区别</title>
+      <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 10 Jul 2018 14:24:58 +0000</pubDate>
+      
+      <guid>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88&#34;&gt;观察者模式与订阅-发布模式的区别是什么&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F&#34;&gt;&lt;code&gt;观察者模式&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F&#34;&gt;&lt;code&gt;订阅-发布模式&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#%E5%BB%B6%E4%BC%B8&#34;&gt;延伸&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;观察者模式与订阅-发布模式的区别是什么&#34;&gt;观察者模式与订阅-发布模式的区别是什么&lt;/h1&gt;
+
+&lt;p&gt;有人说：“&lt;code&gt;订阅-发者模式&lt;/code&gt;=&lt;code&gt;观察者模式&lt;/code&gt;”，这么理解的人，是因为&lt;code&gt;订阅-发布模式&lt;/code&gt;这个名字取的太简洁。&lt;/p&gt;
+
+&lt;p&gt;完整的解读&lt;code&gt;订阅-发布模式&lt;/code&gt;，应该叫&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;观察者模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;观察者&lt;/code&gt;和&lt;code&gt;目标&lt;/code&gt;；而&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;发布者&lt;/code&gt;和&lt;code&gt;分发器&lt;/code&gt;。注意取名的不同表示他们执行的逻辑不同。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;订阅者&lt;/code&gt;：不用解释了。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;观察者&lt;/code&gt;：观察目标的状态，然后将结果告诉订阅者。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;目标&lt;/code&gt;：完全是群众演员。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;发布者&lt;/code&gt;：将自己的信息或状态告诉分发器，nothing more。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;分发器&lt;/code&gt;：将发布者告诉自己的信息转告给订阅者，so simple。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。&lt;/p&gt;
+
+&lt;p&gt;我们用现实的例子来说明吧。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

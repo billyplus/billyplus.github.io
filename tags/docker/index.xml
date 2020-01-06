@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 长孙叔叔的次世界</title>
+    <link>https://ybilly.com/tags/docker/</link>
+    <description>Recent content in docker on 长孙叔叔的次世界</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 15 Nov 2018 15:28:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://ybilly.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>docker容器的迁移</title>
+      <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Thu, 15 Nov 2018 15:28:58 +0000</pubDate>
+      
+      <guid>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
+      <description>&lt;h1 id=&#34;前叙&#34;&gt;前叙&lt;/h1&gt;
+
+&lt;p&gt;原来在&lt;code&gt;vultr&lt;/code&gt;买的&lt;code&gt;vps&lt;/code&gt;内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）&lt;/p&gt;
+
+&lt;p&gt;另外准备了一台 1G 内存的&lt;code&gt;vps&lt;/code&gt;，需要做的事情就是把以前的&lt;code&gt;数据库&lt;/code&gt;、&lt;code&gt;git数据&lt;/code&gt;、各种东西迁移过去。所幸全部应用都已经用&lt;code&gt;docker&lt;/code&gt;实现了容器化，有用数据都放在&lt;code&gt;volume&lt;/code&gt;里面。迁移起来非常方便。&lt;/p&gt;
+
+&lt;h1 id=&#34;准备工作&#34;&gt;准备工作&lt;/h1&gt;
+
+&lt;p&gt;原来的&lt;code&gt;vps&lt;/code&gt;在&lt;code&gt;vultr&lt;/code&gt;中，叫&lt;code&gt;Src&lt;/code&gt;，新的&lt;code&gt;vps&lt;/code&gt;叫&lt;code&gt;Dest&lt;/code&gt;。分别建个目录做备份。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# from Src&lt;/span&gt;
+:~&lt;span class=&#34;nv&#34;&gt;$mkdir&lt;/span&gt; backup
+
+
+&lt;span class=&#34;c1&#34;&gt;# from dest&lt;/span&gt;
+:~&lt;span class=&#34;nv&#34;&gt;$mkdir&lt;/span&gt; backup&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

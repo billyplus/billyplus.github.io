@@ -1,0 +1,1980 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>长孙叔叔的次世界</title>
+        <link>https://ybilly.com/</link>
+        <description>MemE is a powerful and highly customizable GoHugo blog theme.</description>
+        <generator>Hugo 0.58.3 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>me@ybilly.com (Billy Yuan)</managingEditor>
+        
+        
+            <webMaster>me@ybilly.com (Billy Yuan)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Mon, 23 Sep 2019 10:56:23 +0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss+xml" href="https://ybilly.com/rss.xml" />
+        
+        
+            <item>
+                <title>linux下默认用wps打开office文件</title>
+                <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
+                <guid isPermaLink="true">https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
+                <pubDate>Sun, 15 Sep 2019 10:20:00 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[
+
+<h2 id="问题">问题</h2>
+
+<p>相信很多人都遇到过，每次更新wps后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用wps打开。</p>
+
+<h2 id="解决办法">解决办法</h2>
+
+<p>在网上搜了一圈，确定是由于<code>wps</code>自己加了<code>mime type</code>定义的原因。</p>
+
+<p>具体可以<code>ls /usr/share/mime/packages/</code>查看一下，该目录下面应该会有几个<code>wps-office-</code>开头的文件，</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 删除多余的mime type</span>
+sudo rm /usr/share/mime/packages/wps-office-*
+<span class="c1"># 更新</span>
+sudo update-mime-database /usr/share/mime</code></pre></td></tr></table>
+</div>
+</div>
+<p>再单击打开<code>.xlsx</code>文件，发现已经可以正常默认使用wps打开了。</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/linux/">linux</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/wps/">wps</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>vultr新用户送50美金</title>
+                <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
+                <guid isPermaLink="true">https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
+                <pubDate>Sun, 07 Apr 2019 10:13:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h2 id="vultr新用户送50美金">vultr新用户送50美金</h2>
+
+<p>刚才看vultr帐户时，发现vultr又有拉新活动，使用推荐码注册的vultr新用户，首次充值时，将获得50刀的奖励。也就是第一笔充10刀，最终获得60刀。</p>
+
+<p>有两种办法，</p>
+
+<ul>
+<li>一是在注册前先用带推荐码的链接打开vultr的网站，比如像这样的：<a href="https://www.vultr.com/?ref=7995525-4F" target="_blank">https://www.vultr.com/?ref=7995525-4F</a></li>
+<li>第二种是在注册了帐号以后，首次充值时，输入推荐码，比如：<a href="https://www.vultr.com/?ref=7995525-4F" target="_blank">7995525-4F</a>，支持信用卡、支付宝、微信支付。</li>
+</ul>
+
+<p>2019.4.8测试可用。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/vps/">vps</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vps/">vps</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vultr/">vultr</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E4%BF%83%E9%94%80/">促销</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>通用翻墙脚本</title>
+                <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
+                <guid isPermaLink="true">https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
+                <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="通用的翻墙脚本">通用的翻墙脚本</h1>
+
+<p>比如我们在go get的时候，会遇到有些包要翻墙才能下载。在npm install的时候，node-sass有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+
+<p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759" target="_blank">ZeppLu</a>的方案。</p>
+
+<h1 id="windows下的方案">Windows下的方案</h1>
+
+<p>在<code>PATH</code>目录下新建一个<code>proxy.bat</code>的批处理</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="p">@</span><span class="k">echo</span> off
+
+<span class="k">set</span> <span class="nv">http_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
+<span class="k">set</span> <span class="nv">https_proxy</span><span class="p">=</span>127.0.0.1:1081
+
+<span class="nv">%*</span>
+
+<span class="k">echo</span> ...
+
+pause</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="linux下的方案">Linux下的方案</h1>
+
+<p>在<code>.bashrc</code>或者<code>.profile</code>（取决于你使用的tty）中增加以下设置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">alias</span> <span class="nv">socks</span><span class="o">=</span><span class="s1">&#39;ALL_PROXY=socks5://127.0.0.1:1080/ \
+</span><span class="s1">        http_proxy=http://127.0.0.1:1081/ \
+</span><span class="s1">        https_proxy=http://127.0.0.1:1081/ \
+</span><span class="s1">        HTTP_PROXY=http://127.0.0.1:1081/ \
+</span><span class="s1">        HTTPS_PROXY=http://127.0.0.1:1081/&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="使用效果">使用效果</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bat" data-lang="bat"><span class="p">&gt;</span>proxy go get -u -v golang.org/x/net
+Fetching https://golang.org/x/net?go-get=1
+Parsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)
+get <span class="s2">&#34;golang.org/x/net&#34;</span>: found meta tag get.metaImport{Prefix:<span class="s2">&#34;golang.org/x/net&#34;</span>, VCS:<span class="s2">&#34;git&#34;</span>, RepoRoot:<span class="s2">&#34;https://go.googlesource.com/net&#34;</span>} at https://golang.org/x/net?go-get=1
+go: finding golang.org/x/net latest
+Fetching https://golang.org/x?go-get=1
+Parsing meta tags from https://golang.org/x?go-get=1 (status code 200)
+Fetching https://golang.org?go-get=1
+Parsing meta tags from https://golang.org?go-get=1 (status code 200)
+...
+请按任意键继续. . .</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"> ~ socks go get -u -v golang.org/x/crypto
+Fetching https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span>
+Parsing meta tags from https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span> <span class="o">(</span>status code <span class="m">200</span><span class="o">)</span>
+get <span class="s2">&#34;golang.org/x/crypto&#34;</span>: found meta tag get.metaImport<span class="o">{</span>Prefix:<span class="s2">&#34;golang.org/x/crypto&#34;</span>, VCS:<span class="s2">&#34;git&#34;</span>, RepoRoot:<span class="s2">&#34;https://go.googlesource.com/crypto&#34;</span><span class="o">}</span> at https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span>
+golang.org/x/crypto <span class="o">(</span>download<span class="o">)</span>
+package golang.org/x/crypto: no Go files in /e/project/go/src/golang.org/x/crypto</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/v2ray/">v2ray</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/shadowsocks/">shadowsocks</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/golang/">golang</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/">翻墙</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>docker容器的迁移</title>
+                <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
+                <pubDate>Fri, 23 Nov 2018 18:59:00 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="前叙">前叙</h1>
+
+<p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
+
+<p>另外准备了一台 1G 内存的<code>vps</code>，需要做的事情就是把以前的<code>数据库</code>、<code>git数据</code>、各种东西迁移过去。所幸全部应用都已经用<code>docker</code>实现了容器化，有用数据都放在<code>volume</code>里面。迁移起来非常方便。</p>
+
+<h1 id="准备工作">准备工作</h1>
+
+<p>原来的<code>vps</code>在<code>vultr</code>中，叫<code>Src</code>，新的<code>vps</code>叫<code>Dest</code>。分别建个目录做备份。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># from Src</span>
+:~<span class="nv">$mkdir</span> backup
+
+
+<span class="c1"># from dest</span>
+:~<span class="nv">$mkdir</span> backup</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="打包">打包</h1>
+
+<p>我的数据都是放在 volume 里面的。首先是在<code>Src</code>中用一个<code>container</code>把<code>volume</code>加载。这个就个人随意了。</p>
+
+<p>然后将<code>volume</code>里面的东西打包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="c1"># from Src</span>
+sudo docker run -v /gogs --name store alpine /bin/ash
+sudo docker run --rm --volumes-from store -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup alpine tar czf /backup/gogs.tar.gz /volumes/gogs</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="传输">传输</h1>
+
+<p>用 scp 将打包文件从<code>Src</code>下载到<code>Dest</code>中。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/backup
+scp username@ipaddress:~/backup/gogs.tar.gz gogs.tar.gz</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="恢复">恢复</h1>
+
+<p>同样创建一个<code>volume</code>，然后用一个临时的<code>container</code>加载。然后解包。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">sudo docker volume create gogs
+sudo docker run -v /gogs --name store alpine /bin/ash
+
+sudo docker run --rm --volumes-from store -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/backup alpine ash -c <span class="s2">&#34;cd /volumes/gogs &amp;&amp; tar xzf /backup/gogs.tar.gz --strip 2&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>all done.</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/docker/">docker</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>解决webpack无法将css打包成单个文件的问题</title>
+                <link>https://ybilly.com/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/08/10/%E8%A7%A3%E5%86%B3webpack%E6%97%A0%E6%B3%95%E5%B0%86css%E6%89%93%E5%8C%85%E6%88%90%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+                <pubDate>Fri, 10 Aug 2018 16:24:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="遇到的问题">遇到的问题</h1>
+
+<p>在打包一个旧项目的时候，遇到所有的<code>css</code>都丢失了的情况。检查文件发现没有导出<code>style.css</code>这个文件。</p>
+
+<p>按照打包配置，应该会把项目中所有的<code>css</code>整合成一个文件导出的，但是打包过程正常，<code>style.css</code>却没有导出。</p>
+
+<p>找了半天都没有找出问题，试了多种打包方案，把<code>css</code>拆开的、合在一起的、把<code>extract-text-webpack-plugin</code>插件换成<code>mini-css-extract-plugin</code>插件……</p>
+
+<p>整个打包过程没有任何错误提示，导致查错没有方向。</p>
+
+<h1 id="是sideeffects的锅">是sideEffects的锅</h1>
+
+<p>最后在 <a href="https://stackoverflow.com/questions/50416293/webpack-minicssextractplugin-doesnt-extract-file" target="_blank">stackoverflow</a> 这个问题上受到了启发。</p>
+
+<p>Note that any imported file is subject to tree shaking. This means if you use something like css-loader in your project and import a CSS file, it needs to be added to the side effect list so it will not be unintentionally dropped in production mode.</p>
+
+<p><code>Webpack</code>文档里面这样说：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">A &#34;side effect&#34; is defined as code that performs a special behavior when imported, other than exposing one or more exports. An example of this are polyfills, which affect the global scope and usually do not provide an export.
+
+&#34;side effect&#34;就是一段导入后执行特殊功能的代码，比如：`polyfills`的是直接作用在全局的，它并没有导出。</pre></td></tr></table>
+</div>
+</div>
+<p>想起前几天尝试了一下<code>sideEffects</code>的作用，于是赶紧把它改回来。在项目的<code>package.json</code>里面找到<code>sideEffects: false</code>，直接删除掉。</p>
+
+<p>当然，也可以加入例外</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;sideEffects&#34;</span><span class="err">:</span> <span class="p">[</span>
+    <span class="err">&#39;.scss&#39;</span>
+ <span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>再打包，<code>style.css</code>回来了。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>2.4.0 webpack打包体积和速度优化</title>
+                <link>https://ybilly.com/2018/07/20/2.4.0-webpack%E6%89%93%E5%8C%85%E4%BD%93%E7%A7%AF%E5%92%8C%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/07/20/2.4.0-webpack%E6%89%93%E5%8C%85%E4%BD%93%E7%A7%AF%E5%92%8C%E9%80%9F%E5%BA%A6%E4%BC%98%E5%8C%96/</guid>
+                <pubDate>Fri, 20 Jul 2018 10:10:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="typescript的tree-shaking">typescript的tree shaking</h1>
+
+<p>使用webpack打包typescript时，发现没有tree shaking。</p>
+
+<p>分析对比，发现是因为webpack支持的tsconfig配置文件中有说到要用：<code>&quot;module&quot;: &quot;CommonJS&quot;,</code>，</p>
+
+<p>但是在webpack中关于tree shaking的说明里面提到</p>
+
+<p>Tree shaking is a term commonly used in the JavaScript context for dead-code elimination. It relies on the static structure of ES2015 module syntax, i.e. import and export. The name and concept have been popularized by the ES2015 module bundler rollup.</p>
+
+<p>tree shaking要用es2015的才行。所以要分开两个配置文件。<code>tsconfig.json</code>和<code>tsconfig.webpack.json</code>，其中<code>tsconfig.webpack.json</code>用来打包用。</p>
+
+<p><code>tsconfig.json</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;module&#34;</span><span class="err">:</span> <span class="s2">&#34;CommonJS&#34;</span><span class="err">,</span>
+<span class="s2">&#34;target&#34;</span><span class="err">:</span> <span class="s2">&#34;es2015&#34;</span><span class="err">,</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>tsconfig.webpack.json</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="s2">&#34;module&#34;</span><span class="err">:</span> <span class="s2">&#34;es2015&#34;</span><span class="err">,</span>
+<span class="s2">&#34;target&#34;</span><span class="err">:</span> <span class="s2">&#34;es2015&#34;</span><span class="err">,</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>修改<code>webpack.prod.conf.ts</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.vue$/</span><span class="p">,</span>
+                <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;vue-loader&#39;</span><span class="p">,</span>
+                <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="nx">loaders</span><span class="o">:</span> <span class="p">{</span>
+                        <span class="nx">ts</span><span class="o">:</span> <span class="s1">&#39;cache-loader!babel-loader!ts-loader?configFile=tsconfig.webpack.json&#39;</span><span class="p">,</span>
+                        <span class="c1">// Since sass-loader (weirdly) has SCSS as its default parse mode, we map
+</span><span class="c1"></span>                        <span class="c1">// the &#34;scss&#34; and &#34;sass&#34; values for the lang attribute to the right configs here.
+</span><span class="c1"></span>                        <span class="c1">// other preprocessors should work out of the box, no loader config like this necessary.
+</span><span class="c1"></span>                        <span class="nx">scss</span><span class="o">:</span> <span class="s1">&#39;vue-style-loader!css-loader!sass-loader&#39;</span><span class="p">,</span>
+                        <span class="nx">sass</span><span class="o">:</span> <span class="s1">&#39;vue-style-loader!css-loader!sass-loader?indentedSyntax&#39;</span><span class="p">,</span>
+                    <span class="p">},</span>
+                    <span class="c1">// other vue-loader options go here
+</span><span class="c1"></span>                <span class="p">},</span>
+                <span class="nx">include</span><span class="o">:</span> <span class="sr">/src/</span><span class="p">,</span>
+                <span class="nx">exclude</span><span class="o">:</span> <span class="sr">/node_modules\/(?!(autotrack|dom-utils))|vendor\.dll\.js/</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.tsx?$/</span><span class="p">,</span>
+                <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;ts-loader&#39;</span><span class="p">,</span>
+                <span class="nx">exclude</span><span class="o">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
+                <span class="nx">include</span><span class="o">:</span> <span class="sr">/src/</span><span class="p">,</span>
+                <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+                    <span class="nx">configFile</span><span class="o">:</span> <span class="s2">&#34;tsconfig.webpack.json&#34;</span><span class="p">,</span>
+                    <span class="nx">appendTsSuffixTo</span><span class="o">:</span> <span class="p">[</span><span class="sr">/\.vue$/</span><span class="p">],</span>
+                <span class="p">},</span>
+            <span class="p">},</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>打包测试一下，<code>app.js</code>从<code>12k</code>减小到<code>7k</code>，变化明显。</p>
+
+<h1 id="优化打包速度">优化打包速度</h1>
+
+<p>使用dll插件可以优化打包速度，首先新建一个<code>dll</code>专用的打包配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">OptimizeCSSAssetsPlugin</span> <span class="nx">from</span> <span class="s1">&#39;optimize-css-assets-webpack-plugin&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">path</span> <span class="nx">from</span> <span class="s1">&#39;path&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">UglifyJsPlugin</span> <span class="nx">from</span> <span class="s1">&#39;uglifyjs-webpack-plugin&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">webpack</span> <span class="nx">from</span> <span class="s1">&#39;webpack&#39;</span><span class="p">;</span>
+
+<span class="kr">module</span><span class="nx">.exports</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;development&#39;</span><span class="p">,</span>
+    <span class="nx">entry</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">vendor</span><span class="o">:</span> <span class="p">[</span>
+            <span class="s1">&#39;@fortawesome/fontawesome-svg-core&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;@fortawesome/free-solid-svg-icons&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;@fortawesome/vue-fontawesome&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;vue&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;element-ui&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;vue-router&#39;</span><span class="p">,</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="nx">output</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">path</span>: <span class="kt">path.resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;../static/js&#39;</span><span class="p">),</span>
+        <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;[name].dll.js&#39;</span><span class="p">,</span>
+        <span class="nx">library</span><span class="o">:</span> <span class="s1">&#39;[name]_library&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.vue$/</span><span class="p">,</span>
+                <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;vue-loader&#39;</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.js$/</span><span class="p">,</span>
+                <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;babel-loader&#39;</span><span class="p">,</span>
+                <span class="nx">exclude</span><span class="o">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.tsx?$/</span><span class="p">,</span>
+                <span class="nx">loader</span><span class="o">:</span> <span class="s1">&#39;ts-loader&#39;</span><span class="p">,</span>
+                <span class="nx">exclude</span><span class="o">:</span> <span class="sr">/node_modules/</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="nx">optimization</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">minimizer</span><span class="o">:</span> <span class="p">[</span>
+            <span class="k">new</span> <span class="nx">UglifyJsPlugin</span><span class="p">({</span>
+                <span class="nx">cache</span>: <span class="kt">true</span><span class="p">,</span>
+                <span class="nx">parallel</span>: <span class="kt">true</span><span class="p">,</span>
+                <span class="nx">sourceMap</span>: <span class="kt">false</span><span class="p">,</span> <span class="c1">// set to true if you want JS source maps
+</span><span class="c1"></span>            <span class="p">}),</span>
+            <span class="k">new</span> <span class="nx">OptimizeCSSAssetsPlugin</span><span class="p">({}),</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+    <span class="nx">plugins</span><span class="o">:</span> <span class="p">[</span>
+        <span class="k">new</span> <span class="nx">webpack</span><span class="p">.</span><span class="nx">optimize</span><span class="p">.</span><span class="nx">ModuleConcatenationPlugin</span><span class="p">(),</span>
+        <span class="k">new</span> <span class="nx">webpack</span><span class="p">.</span><span class="nx">DllPlugin</span><span class="p">({</span>
+            <span class="nx">path</span>: <span class="kt">path.join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;../static/js&#39;</span><span class="p">,</span> <span class="s1">&#39;[name]-manifest.json&#39;</span><span class="p">),</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;[name]_library&#39;</span><span class="p">,</span>
+        <span class="p">}),</span>
+    <span class="p">],</span>
+<span class="p">};</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>这个配置用来生成<code>verdor.dll.js</code>文件，然后修改<code>webpack.prod.conf.ts</code>配置，引用<code>verdor.dll.js</code>。</p>
+
+<p>plugins里面增加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new</span> <span class="nx">Webpack</span><span class="p">.</span><span class="nx">DllReferencePlugin</span><span class="p">({</span>
+    <span class="nx">context</span>: <span class="kt">__dirname</span><span class="p">,</span>
+    <span class="nx">manifest</span>: <span class="kt">require</span><span class="p">(</span><span class="s1">&#39;../static/js/vendor-manifest.json&#39;</span><span class="p">),</span>
+<span class="p">}),</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>先运行 <code>webpack --config build/webpack.dll.conf.ts</code> 生成dll，然后运行 <code>cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.ts</code>。</p>
+
+<p>测试打包速度比之前快了几秒钟。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>2.3.0 production打包</title>
+                <link>https://ybilly.com/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/07/15/2.3.0-production%E6%89%93%E5%8C%85/</guid>
+                <pubDate>Sun, 15 Jul 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<!-- # Production打包 -->
+
+<p>这几天准备研究一下，webpack怎么找包发布项目。</p>
+
+<h2 id="打包需求">打包需求：</h2>
+
+<ul>
+<li>包要尽量小；</li>
+<li>打包速度尽量快；</li>
+<li>自动打包静态文件；</li>
+</ul>
+
+<h1 id="打包测试">打包测试</h1>
+
+<p>新增一个配置文件 <code>webpack.prod.conf</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">Webpack</span> <span class="nx">from</span> <span class="s1">&#39;webpack&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="o">*</span> <span class="kr">as</span> <span class="nx">merge</span> <span class="nx">from</span> <span class="s1">&#39;webpack-merge&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="p">{</span> <span class="nx">config</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;./webpack.conf&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">prodConfig</span>: <span class="kt">Webpack.Configuration</span> <span class="o">=</span> <span class="nx">merge</span><span class="p">.</span><span class="nx">smart</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">mode</span><span class="o">:</span> <span class="s1">&#39;production&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">prodConfig</span><span class="p">;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>package.json</code> 中添加命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json">    <span class="s2">&#34;scripts&#34;</span><span class="err">:</span><span class="p">{</span>
+        <span class="nt">&#34;build:prod&#34;</span><span class="p">:</span> <span class="s2">&#34;webpack --config build/webpack.prod.conf.ts&#34;</span><span class="p">,</span>
+    <span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>打包完成后，生成的 <code>app.js</code> 有 <code>8.47M</code>，有点大。</p>
+
+<h1 id="去掉sourcemap">去掉sourcemap</h1>
+
+<p>首先想到的是去掉 <code>sourceMap</code>。添加配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript">    <span class="nx">devtool</span>: <span class="kt">false</span><span class="p">,</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>打包出来的结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">app.js          <span class="m">2</span>.2M</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="分离css样式">分离css样式</h1>
+
+<p>使用 <code>extract-text-webpack-plugin</code> 插件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">npm i -D extract-text-webpack-plugin @types/extract-text-webpack-plugin</code></pre></td></tr></table>
+</div>
+</div>
+<p>打包出来的结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">app.js          <span class="m">1</span>,298,009
+css/style.css   <span class="m">969</span>,886</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="尝试优化一下css">尝试优化一下css</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">npm i -D optimize-css-assets-webpack-plugin @types/optimize-css-assets-webpack-plugin</code></pre></td></tr></table>
+</div>
+</div>
+<p>webpack的minimizer中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript">    <span class="k">new</span> <span class="nx">OptimizeCSSPlugin</span><span class="p">({</span>
+        <span class="nx">cssProcessorOptions</span><span class="o">:</span> <span class="p">{</span> <span class="nx">map</span><span class="o">:</span> <span class="p">{</span> <span class="nx">inline</span>: <span class="kt">false</span> <span class="p">},</span> <span class="nx">discardComments</span><span class="o">:</span> <span class="p">{</span> <span class="nx">removeAll</span>: <span class="kt">true</span> <span class="p">}</span> <span class="p">},</span>
+    <span class="p">}),</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>打包出来：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">app.js          <span class="m">1</span>,298,009
+css/style.css   <span class="m">184</span>,234</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="处理app-js">处理app.js</h1>
+
+<p>现在打包出来的js是一个大文件，先按模块折开</p>
+
+<h2 id="折分app-js">折分app.js</h2>
+
+<p>想法是将所有第三方库合并成一个 <code>verdor.js</code>，因为项目现在不太大，可以这样做。</p>
+
+<p>添加<code>splitChunks</code>配置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="nx">optimization</span><span class="o">:</span><span class="p">{</span>
+    <span class="c1">//添加splitChunks配置
+</span><span class="c1"></span>    <span class="nx">splitChunks</span><span class="o">:</span> <span class="p">{</span>
+        <span class="c1">// chunks: &#34;initial&#34;，&#34;async&#34;和&#34;all&#34;分别是：初始块，按需块或所有块；
+</span><span class="c1"></span>        <span class="nx">chunks</span><span class="o">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+        <span class="c1">// （默认值：30000）块的最小大小
+</span><span class="c1"></span>        <span class="nx">minSize</span>: <span class="kt">30000</span><span class="p">,</span>
+        <span class="c1">// （默认值：1）分割前共享模块的最小块数
+</span><span class="c1"></span>        <span class="nx">minChunks</span>: <span class="kt">1</span><span class="p">,</span>
+        <span class="c1">// （缺省值5）按需加载时的最大并行请求数
+</span><span class="c1"></span>        <span class="nx">maxAsyncRequests</span>: <span class="kt">8</span><span class="p">,</span>
+        <span class="c1">// cacheGroups is an object where keys are the cache group names.
+</span><span class="c1"></span>        <span class="nx">name</span>: <span class="kt">true</span><span class="p">,</span>
+        <span class="nx">cacheGroups</span><span class="o">:</span> <span class="p">{</span>
+            <span class="nx">vendors</span><span class="o">:</span> <span class="p">{</span>
+                <span class="nx">test</span><span class="o">:</span> <span class="sr">/[\\/]node_modules[\\/]/</span><span class="p">,</span>
+                <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;verdors&#39;</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>打包出来：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">app.js          <span class="m">7</span>,608
+verdor.js       <span class="m">729</span>,515
+css/style.css   <span class="m">184</span>,234</code></pre></td></tr></table>
+</div>
+</div>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vue/">vue</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/elementui/">elementui</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/typescript/">typescript</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>观察者模式与订阅-发布模式的区别</title>
+                <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+                <pubDate>Tue, 10 Jul 2018 14:24:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<ul>
+<li><a href="#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88">观察者模式与订阅-发布模式的区别是什么</a>
+
+<ul>
+<li><a href="#%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F"><code>观察者模式</code></a></li>
+<li><a href="#%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F"><code>订阅-发布模式</code></a></li>
+<li><a href="#%E5%BB%B6%E4%BC%B8">延伸</a></li>
+</ul></li>
+</ul>
+
+<h1 id="观察者模式与订阅-发布模式的区别是什么">观察者模式与订阅-发布模式的区别是什么</h1>
+
+<p>有人说：“<code>订阅-发者模式</code>=<code>观察者模式</code>”，这么理解的人，是因为<code>订阅-发布模式</code>这个名字取的太简洁。</p>
+
+<p>完整的解读<code>订阅-发布模式</code>，应该叫<code>订阅-分发-发布模式</code>。</p>
+
+<p><code>观察者模式</code>涉及的角色：<code>订阅者</code>、<code>观察者</code>和<code>目标</code>；而<code>订阅-分发-发布模式</code>涉及的角色：<code>订阅者</code>、<code>发布者</code>和<code>分发器</code>。注意取名的不同表示他们执行的逻辑不同。</p>
+
+<ul>
+<li><code>订阅者</code>：不用解释了。</li>
+<li><code>观察者</code>：观察目标的状态，然后将结果告诉订阅者。</li>
+<li><code>目标</code>：完全是群众演员。</li>
+<li><code>发布者</code>：将自己的信息或状态告诉分发器，nothing more。</li>
+<li><code>分发器</code>：将发布者告诉自己的信息转告给订阅者，so simple。</li>
+</ul>
+
+<p>这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。</p>
+
+<p>我们用现实的例子来说明吧。</p>
+
+<h2 id="观察者模式"><code>观察者模式</code></h2>
+
+<p>你在路上看到蚂蚁搬家，想知道它们什么时候搬完，但是又又不想一直这么无聊的盯。所以你找个小孩，给他一块糖，叫他帮你看，好了打电话告诉你。然后你就回寝室打农药了。</p>
+
+<p>小孩就是<code>观察者</code>，蚂蚁搬家就是<code>目标</code>，你是<code>订阅者</code>。应用场景直观明了。</p>
+
+<p>后来，你又看到一窝蚂蚁，只好又叫个小孩。因为职能必须唯一，当然我们不可以叫单个小孩一个人看两。</p>
+
+<p>后来，又叫了个小孩……又叫了个小孩……又叫了个……</p>
+
+<p>小孩多还不是麻烦，麻烦大的是，有一天，隔壁老王对这个小孩说，也通知我一下，隔壁老李对另一个小孩说，也通知我一下……</p>
+
+<p>每个小孩要通知100个人，你等着100个小孩通知你。如果有1000个……10000个……</p>
+
+<h2 id="订阅-发布模式"><code>订阅-发布模式</code></h2>
+
+<p>这个时候就要另一个模式出场了。有个孩子王还是很有头脑的。他对所有小孩说，你们看着蚂蚁搬家，有结果就告诉他。然后你对其它人说，谁想知道蚂蚁搬家最新进展的来我这里登记一下姓名、年龄、爱好和蚂蚁窝的编号。这时，小孩是<code>发布者</code>，孩子王是<code>分发器</code>，你和老王老李是<code>订阅者</code>。</p>
+
+<h2 id="延伸">延伸</h2>
+
+<p>然后孩子王又给老王老李他们两种选择，一种是等他来打电话给老王老李，另一种是隔一段时间老王老李打电话找他问，这就是push和pull了。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/">观察者模式</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F/">订阅-发布模式</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/">软件模式</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>go-get 利用 socks5 代理翻墙下载</title>
+                <link>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
+                <pubDate>Tue, 03 Jul 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="新版通用脚本">新版通用脚本</h1>
+
+<p>Updated: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" target="_blank">传送门·通用翻墙脚本</a></p>
+
+<h1 id="git-config-配置代理在-go-get-命令中无效"><code>git config</code> 配置代理在<code>go get</code>命令中无效</h1>
+
+<p><code>go get</code> 下载软件包时遇到的翻墙问题确实很烦人。而且 <code>git config</code> 里面配的代理也是会导致<code>go get</code>失败的。</p>
+
+<p>因为当你使用 <code>go get golang.org/x/crypto</code> 时，需要先访问 <code>https://golang.org/x/crypto?go-get=1</code> 来获取版本库的类型是 <code>git</code> 或 <code>svn</code> 或是其它 。这个阶段 <code>git config</code> 配置的代理是不起作用的。所以 <code>go get</code>就会失败。</p>
+
+<h1 id="直接使用-ss-的-socks5-代理">直接使用 <code>ss</code> 的 <code>socks5</code> 代理</h1>
+
+<p>在 windows 环境中，网上以前的经验是使用一个软件把 <code>ss</code> 的 <code>socks5</code> 代理转成 <code>http</code> 代理，然后使用 <code>set http_proxy=http://127.0.0.1:1081</code> 这样来达到目的。</p>
+
+<p>实际上不需要那么麻烦，经过测试，<code>go get</code>命令直接就可以支持 <code>socks5</code> 代理。</p>
+
+<p>新建一个批处理 <code>goget.bat</code>，放到 <code>PATH</code> 环境下。脚本如下：</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="p">@</span><span class="k">echo</span> off
+
+<span class="k">set</span> <span class="nv">http_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
+<span class="k">set</span> <span class="nv">https_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
+
+go get -u -v <span class="nv">%*</span>
+
+<span class="k">echo</span> ...
+
+pause</code></pre></td></tr></table>
+</div>
+</div>
+<p>使用的时候直接打开命令行输入 <code>goget golang.org/x/crypto</code> 来看看效果。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-batch" data-lang="batch">e<span class="p">:</span><span class="nl">\project\go\src</span><span class="c1">&gt;goget golang.org/x/crypto</span>
+Fetching https://golang.org/x/crypto?go-get=1
+Parsing meta tags from https://golang.org/x/crypto?go-get=1 (status code 200)
+get <span class="s2">&#34;golang.org/x/crypto&#34;</span>: found meta tag get.metaImport{Prefix:<span class="s2">&#34;golang.org/x/crypto&#34;</span>, VCS:<span class="s2">&#34;git&#34;</span>, RepoRoot:<span class="s2">&#34;https://go.googlesource.com/crypto&#34;</span>} at https://golang.org/x/crypto?go-get=1
+golang.org/x/crypto (download)
+package golang.org/x/crypto: no Go files in E:\project\go\src\golang.org\x\crypto
+...
+请按任意键继续. . .</code></pre></td></tr></table>
+</div>
+</div>
+<p>这下完美了。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/">使用经验</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/shadowsocks/">shadowsocks</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/golang/">golang</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/">翻墙</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>2.2.0 使用vue的router跳转</title>
+                <link>https://ybilly.com/2018/06/20/2.2.0-%E4%BD%BF%E7%94%A8vue%E7%9A%84router%E8%B7%B3%E8%BD%AC/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/06/20/2.2.0-%E4%BD%BF%E7%94%A8vue%E7%9A%84router%E8%B7%B3%E8%BD%AC/</guid>
+                <pubDate>Wed, 20 Jun 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="增加router模块">增加router模块</h1>
+
+<p>在 <code>src/router</code> 目录下新建 <code>index.ts</code>, 用来定义整个页面的路由。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">VueRouter</span><span class="p">,</span> <span class="p">{</span> <span class="nx">RouteConfig</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;vue-router&#39;</span><span class="p">;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">VueRouter</span><span class="p">);</span>
+
+<span class="kr">import</span> <span class="nx">Layout</span> <span class="nx">from</span> <span class="s1">&#39;@/views/layout/index.vue&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">const</span> <span class="nx">staticRouter</span>: <span class="kt">RouteConfig</span><span class="p">[]</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">path</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">component</span>: <span class="kt">Layout</span><span class="p">,</span> <span class="nx">redirect</span><span class="o">:</span> <span class="s1">&#39;dashboard&#39;</span>
+    <span class="p">}</span>
+<span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>然后在 <code>src/index.ts</code> 里面需要把 <code>router</code> 引入。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="nx">router</span> <span class="nx">from</span> <span class="s1">&#39;@/router&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">v</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+    <span class="nx">router</span><span class="p">,</span>
+    <span class="p">......</span>
+<span class="p">});</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="新建页面-layout">新建页面 Layout</h1>
+
+<p>在 <code>src/views/layout</code> 目录下新建 <code>index.vue</code>, 用来定义整个页面的模板。</p>
+
+<p>先做个简单的页面。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;app-wrapper&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sidebar&#34;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/&#34;</span><span class="p">&gt;</span>Index<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/pages&#34;</span><span class="p">&gt;</span>Pages<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/about&#34;</span><span class="p">&gt;</span>About<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">router-view</span><span class="p">&gt;&lt;/</span><span class="nt">router-view</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ts&#34;</span><span class="p">&gt;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Vue</span><span class="p">,</span> <span class="nx">Prop</span><span class="p">,</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;vue-property-decorator&#34;</span><span class="p">;</span>
+<span class="k">export</span> <span class="k">default</span> <span class="k">class</span> <span class="nx">Layout</span> <span class="k">extends</span> <span class="nx">Vue</span> <span class="p">{}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>运行一下看结果。可以正常导航了。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vue/">vue</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/elementui/">elementui</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/typescript/">typescript</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>2.1.0 Vue单页工程</title>
+                <link>https://ybilly.com/2018/06/10/2.1.0-vue%E5%8D%95%E9%A1%B5%E5%B7%A5%E7%A8%8B/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/06/10/2.1.0-vue%E5%8D%95%E9%A1%B5%E5%B7%A5%E7%A8%8B/</guid>
+                <pubDate>Sun, 10 Jun 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="安装依赖">安装依赖</h1>
+
+<p>我们需要 <code>vue-property-decorator</code> 来引入 <code>Prop</code> 和 <code>Component</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">npm i -s vue-property-decorator</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="vue-单页工程"><code>Vue</code>单页工程</h1>
+
+<p>在 <code>src</code> 目录下新建 <code>app.vue</code>文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">template</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello world<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">template</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;ts&#34;</span><span class="p">&gt;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">Vue</span><span class="p">,</span> <span class="nx">Prop</span><span class="p">,</span> <span class="nx">Component</span> <span class="p">}</span> <span class="nx">from</span> <span class="s2">&#34;vue-property-decorator&#34;</span><span class="p">;</span>
+
+<span class="err">@</span><span class="nx">Component</span>
+<span class="k">export</span> <span class="k">default</span> <span class="k">class</span> <span class="nx">AppComponent</span> <span class="k">extends</span> <span class="nx">Vue</span> <span class="p">{}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>修改 <code>index.ts</code> 中的内容</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="nx">AppComponent</span> <span class="nx">from</span> <span class="s1">&#39;@/app.vue&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">v</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="p">...</span>
+    <span class="nx">template</span><span class="o">:</span> <span class="sb">`&lt;app-component&gt;&lt;/app-component&gt;`</span><span class="p">,</span>
+    <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">AppComponent</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="p">...</span>
+<span class="p">});</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>这里发现在，提示：“<code>[ts] 找不到模块“@/app.vue”。</code>” 这是因为我们没有告诉 <code>typescript</code> 如何处理 <code>.vue</code> 文件。</p>
+
+<p>这里我们新建一个 <code>vue-shims.d.ts</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">declare</span> <span class="nx">module</span> <span class="s2">&#34;*.vue&#34;</span> <span class="p">{</span>
+    <span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s2">&#34;vue&#34;</span><span class="p">;</span>
+    <span class="kr">export</span> <span class="k">default</span> <span class="nx">Vue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>这样错误提示就解决了。</p>
+
+<p><code>npm start</code> 预览一下。<code>Hello World</code>。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vue/">vue</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/elementui/">elementui</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/typescript/">typescript</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>2.0.0 webpack打包</title>
+                <link>https://ybilly.com/2018/06/03/2.0.0-webpack%E6%89%93%E5%8C%85/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/06/03/2.0.0-webpack%E6%89%93%E5%8C%85/</guid>
+                <pubDate>Sun, 03 Jun 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="安装其它包">安装其它包</h1>
+
+<h2 id="打包插件">打包插件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D vue-loader ts-loader cache-loader style-loader css-loader url-loader file-loader html-webpack-plugin vue-template-compiler</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="为了使用-ts-格式的-webpack-配置">为了使用 .ts 格式的 webpack 配置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D  ts-node @types/html-webpack-plugin @types/node @types/webpack @types/webpack-merge</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="babel相关的包">babel相关的包</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D @babel/core @babel/preset-typescript babel-loader</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="显示-webpack-打包进度">显示 webpack 打包进度</h1>
+
+<h2 id="安装包">安装包</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D chalk progress-bar-webpack-plugin</code></pre></td></tr></table>
+</div>
+</div>
+<p>这里要注意，会提示：“<strong>无法找到模块“progress-bar-webpack-plugin”的声明文件。</strong>”</p>
+
+<p>因为用的是typescript，所以需要有声明文件，也就是常见的<code>.d.ts</code>文件，网上没有现成的，我们需要自己手动写一个。把声明文件放到前面我们在<code>tsconfig.json</code>里面定义的<code>types</code>目录里面。</p>
+
+<p>在<code>types</code>目录新建文件夹<code>progress-bar-webpack-plugin</code>，然后在里面新建文件<code>index.d.ts</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="p">{</span> <span class="nx">Plugin</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;webpack&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="o">=</span> <span class="nx">ProgressBarPlugin</span><span class="p">;</span>
+<span class="kr">declare</span> <span class="nx">namespace</span> <span class="nx">ProgressBarPlugin</span> <span class="p">{</span>
+    <span class="kr">interface</span> <span class="nx">ProgressBarOptions</span> <span class="p">{</span>
+        <span class="nx">format</span>: <span class="kt">string</span><span class="p">;</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kr">declare</span> <span class="kr">class</span> <span class="nx">ProgressBarPlugin</span> <span class="kr">extends</span> <span class="nx">Plugin</span> <span class="p">{</span>
+    <span class="kr">constructor</span><span class="p">(</span><span class="nx">options?</span>: <span class="kt">ProgressBarPlugin.ProgressBarOptions</span><span class="p">);</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>有了这个定义就不会报错了。</p>
+
+<h1 id="准备webpack配置">准备webpack配置</h1>
+
+<p><code>build</code> 目录下新建文件 <code>webpack.conf.ts</code>，具体内容太长就不复制了，直接在项目中看吧。</p>
+
+<h1 id="脚本">脚本</h1>
+
+<p>在<code>package.json</code>里面增加脚本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json">  <span class="s2">&#34;scripts&#34;</span><span class="err">:</span> <span class="p">{</span>
+    <span class="nt">&#34;start&#34;</span><span class="p">:</span> <span class="s2">&#34;webpack-dev-server --config build/webpack.conf.ts&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;build:dev&#34;</span><span class="p">:</span> <span class="s2">&#34;webpack --config build/webpack.conf.ts&#34;</span>
+  <span class="p">}</span><span class="err">,</span></code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="测试">测试</h1>
+
+<p>完成以上工作，开发环境就算准备好了。</p>
+
+<p>在工程根目录新建一个<code>index.html</code>模板。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&#34;X-UA-Compatible&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;IE=edge,chrome=1&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;renderer&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;webkit&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>
+        <span class="err">&lt;</span>%= htmlWebpackPlugin.options.title %&gt;
+    <span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>在<code>src</code>目录新建<code>index.ts</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="kr">import</span> <span class="nx">Vue</span> <span class="nx">from</span> <span class="s1">&#39;vue&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">ElementUI</span> <span class="nx">from</span> <span class="s1">&#39;element-ui&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="s1">&#39;element-ui/lib/theme-chalk/index.css&#39;</span><span class="p">;</span>
+
+<span class="nx">Vue</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">ElementUI</span><span class="p">);</span>
+
+<span class="kr">const</span> <span class="nx">v</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+    <span class="nx">el</span><span class="o">:</span> <span class="s1">&#39;#app&#39;</span><span class="p">,</span>
+    <span class="nx">template</span><span class="o">:</span> <span class="sb">`&lt;p&gt;hello world&lt;/p&gt;`</span><span class="p">,</span>
+    <span class="nx">components</span><span class="o">:</span> <span class="p">{</span>
+    <span class="p">},</span>
+<span class="p">});</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>然后运行 <code>npm run start</code></p>
+
+<p>打开 <code>http://localhost:9000</code> 看一下。</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vue/">vue</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>1.0.0 准备工程</title>
+                <link>https://ybilly.com/2018/06/01/1.0.0-%E5%87%86%E5%A4%87%E5%B7%A5%E7%A8%8B/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/06/01/1.0.0-%E5%87%86%E5%A4%87%E5%B7%A5%E7%A8%8B/</guid>
+                <pubDate>Fri, 01 Jun 2018 15:28:58 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h1 id="创建新工程">创建新工程</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">mkdir vue-learning
+<span class="nb">cd</span> vue-learning
+npm init</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="安装">安装</h1>
+
+<h2 id="vue-vuex-element-ui">vue &amp;&amp; vuex &amp;&amp; element-ui</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -s vue vuex vue-router element-ui</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="webpack-typescript">webpack &amp;&amp; typescript</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-shell" data-lang="shell">npm i -D webpack typescript tslint webpack-dev-server</code></pre></td></tr></table>
+</div>
+</div>
+<h1 id="配置">配置</h1>
+
+<h2 id="配置-vscode">配置 vscode</h2>
+
+<p><code>vscode</code> 安装插件 <code>vetur</code> 和 <code>tslint</code></p>
+
+<p>编辑项目工程下的配置文件 <code>.vscode/setting.json</code>，没有可以自己加个</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="err">//</span> <span class="err">Place</span> <span class="err">your</span> <span class="err">settings</span> <span class="err">in</span> <span class="err">this</span> <span class="err">file</span> <span class="err">to</span> <span class="err">overwrite</span> <span class="err">default</span> <span class="err">and</span> <span class="err">user</span> <span class="err">settings.</span>
+<span class="p">{</span>
+    <span class="nt">&#34;files.associations&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;*.vue&#34;</span><span class="p">:</span> <span class="s2">&#34;vue&#34;</span>
+    <span class="p">},</span>
+    <span class="err">//</span> <span class="err">保存文件时自动格式化一下，强迫症。</span>
+    <span class="nt">&#34;editor.formatOnSave&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+
+    <span class="err">//</span> <span class="err">.vue文件里面的</span> <span class="err">&lt;template&gt;</span> <span class="err">段用默认的html工具格式化</span>
+    <span class="nt">&#34;vetur.format.defaultFormatter.html&#34;</span><span class="p">:</span> <span class="s2">&#34;js-beautify-html&#34;</span><span class="p">,</span>
+    <span class="err">//</span> <span class="err">tslint默认会自动修复格式，这个功能要关掉，只开启特定的功能</span>
+    <span class="nt">&#34;tslint.autoFixOnSave&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;ordered-imports&#34;</span><span class="p">,</span> <span class="s2">&#34;eofline&#34;</span><span class="p">,</span> <span class="s2">&#34;no-consecutive-blank-lines&#34;</span><span class="p">],</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>说明一下：</p>
+
+<ul>
+<li>ordered-imports：ts 文件里面的 import 要按字母顺序，这个老提示很烦，保存的时候自动排一下就好</li>
+<li>eofline：ts yy 文件最后一行必须是空行，自动改吧</li>
+<li>no-consecutive-blank-lines：不能连着两个空行，自动改吧</li>
+</ul>
+
+<h2 id="配置-tsconfig-json">配置 tsconfig.json</h2>
+
+<p>在项目根目录新建一个文件 <code>tsconfig.json</code>，内容如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-json" data-lang="json"><span class="p">{</span>
+    <span class="nt">&#34;compilerOptions&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;outDir&#34;</span><span class="p">:</span> <span class="s2">&#34;./built/&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;sourceMap&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&#34;strict&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&#34;module&#34;</span><span class="p">:</span> <span class="s2">&#34;CommonJS&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;moduleResolution&#34;</span><span class="p">:</span> <span class="s2">&#34;node&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;target&#34;</span><span class="p">:</span> <span class="s2">&#34;es6&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;experimentalDecorators&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&#34;baseUrl&#34;</span><span class="p">:</span> <span class="s2">&#34;./&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;paths&#34;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&#34;@/*&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;src/*&#34;</span><span class="p">],</span>
+            <span class="nt">&#34;*&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;types/*&#34;</span><span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;include&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&#34;./src/**/*&#34;</span>
+    <span class="p">],</span>
+    <span class="nt">&#34;exclude&#34;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&#34;node_modules&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;**/*.spec.ts&#34;</span>
+    <span class="p">]</span>
+<span class="p">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>说明：<code>path</code>字段可以用来定义引用别名，目录结构复杂的项目必用，谁用谁知道。</li>
+</ul>
+
+<p>好了，初始的工程准备好了，后面我们来配置webpack的打包</p>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/categories/%E5%AD%A6%E4%B9%A0vue/">学习vue</category>
+                                
+                            
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/vue/">vue</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/webpack/">webpack</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/elementui/">elementui</category>
+                                
+                            
+                                
+                                    <category domain="https://ybilly.com/tags/typescript/">typescript</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>优化网站</title>
+                <link>https://ybilly.com/2018/02/03/%E4%BC%98%E5%8C%96%E7%BD%91%E7%AB%99/</link>
+                <guid isPermaLink="true">https://ybilly.com/2018/02/03/%E4%BC%98%E5%8C%96%E7%BD%91%E7%AB%99/</guid>
+                <pubDate>Sat, 03 Feb 2018 16:03:13 +0000</pubDate>
+                
+                    <author>me@ybilly.com (Billy Yuan)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<ul>
+<li>使用浏览器缓存</li>
+<li><a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">https://developers.google.com/speed/pagespeed/insights/</a></li>
+</ul>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
