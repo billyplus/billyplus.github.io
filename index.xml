@@ -18,37 +18,37 @@
       
       <item>
         <title>引言</title>
-        <link>https://ybilly.com/posts/2020/01/05/%E5%BC%95%E8%A8%80/</link>
+        <link>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</link>
         <pubDate>Sun, 05 Jan 2020 15:28:58 +0000</pubDate>
         <author>me@ybilly.com (Billy Yuan)</author>
-        <guid>https://ybilly.com/posts/2020/01/05/%E5%BC%95%E8%A8%80/</guid>
+        <guid>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</guid>
         <description>面向的对象 以前没有接触过编程的从业者或者学生，经常做一些重复性的数字计算类工作，需要使用较复杂的excel公式或者手动重复多次才能完成任务 不</description>
       </item>
       
       <item>
         <title>linux下默认用wps打开office文件</title>
-        <link>https://ybilly.com/posts/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
+        <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
         <pubDate>Sun, 15 Sep 2019 10:20:00 +0000</pubDate>
         <author>me@ybilly.com (Billy Yuan)</author>
-        <guid>https://ybilly.com/posts/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
+        <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
         <description>&lt;p&gt;相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生&lt;code&gt;.docx&lt;/code&gt;、&lt;code&gt;.xlsx&lt;/code&gt;文件默认打开方式被修改的问题。直接点击打开&lt;code&gt;office&lt;/code&gt;文件的话，会被认为是打开一个&lt;code&gt;zip&lt;/code&gt;文件。只有通过右键菜单里面选择&lt;code&gt;open with wps...&lt;/code&gt;这种方式才能正常使用 wps 打开。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>vultr新用户送50美金</title>
-        <link>https://ybilly.com/posts/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
+        <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
         <pubDate>Sun, 07 Apr 2019 10:13:58 +0000</pubDate>
         <author>me@ybilly.com (Billy Yuan)</author>
-        <guid>https://ybilly.com/posts/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
+        <guid>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
         <description>&lt;p&gt;刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。&lt;/p&gt;</description>
       </item>
       
       <item>
         <title>通用翻墙脚本</title>
-        <link>https://ybilly.com/posts/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
+        <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
         <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
         <author>me@ybilly.com (Billy Yuan)</author>
-        <guid>https://ybilly.com/posts/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
+        <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
         <description>&lt;p&gt;比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的&lt;code&gt;http_proxy&lt;/code&gt;或者&lt;code&gt;https_proxy&lt;/code&gt;，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。&lt;/p&gt;
 &lt;p&gt;参考&lt;a href=&#34;https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759&#34;&gt;ZeppLu&lt;/a&gt;的方案。&lt;/p&gt;</description>
       </item>
