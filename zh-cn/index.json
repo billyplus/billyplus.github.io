@@ -1,5 +1,14 @@
 [
 {
+	"uri": "https://ybilly.com/zh-cn/archive/",
+	"title": "Archive",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "Archive Page",
+	"content": ""
+},
+{
 	"uri": "https://ybilly.com/zh-cn/",
 	"title": "Billy&#39;s",
 	"tags": [],
@@ -180,6 +189,24 @@
 	"content": "原来在vultr买的vps内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）\n另外准备了一台 1G 内存的vps，需要做的事情就是把以前的数据库、git数据、各种东西迁移过去。所幸全部应用都已经用docker实现了容器化，有用数据都放在volume里面。迁移起来非常方便。\n准备工作 原来的vps在vultr中，叫Src，新的vps叫Dest。分别建个目录做备份。\n1 2 3 4 5 6  # from Src\r:~$mkdir backup\r# from dest\r:~$mkdir backup\r  打包 我的数据都是放在 volume 里面的。首先是在Src中用一个container把volume加载。这个就个人随意了。\n然后将volume里面的东西打包\n1 2 3  # from Src\rsudo docker run -v /gogs --name store alpine /bin/ash\rsudo docker run --rm --volumes-from store -v $(pwd):/backup alpine tar czf /backup/gogs.tar.gz /volumes/gogs\r  传输 用 scp 将打包文件从Src下载到Dest中。\n1 2 3  cd ~/backup\rscp username@ipaddress:~/backup/gogs.tar.gz gogs.tar.gz\r  恢复 同样创建一个volume，然后用一个临时的container加载。然后解包。\n1 2 3 4  sudo docker volume create gogs\rsudo docker run -v /gogs --name store alpine /bin/ash\rsudo docker run --rm --volumes-from store -v $(pwd):/backup alpine ash -c \u0026#34;cd /volumes/gogs \u0026amp;\u0026amp; tar xzf /backup/gogs.tar.gz --strip 2\u0026#34;\r  all done.\n"
 },
 {
+	"uri": "https://ybilly.com/zh-cn/gallery/",
+	"title": "Gallery",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ybilly.com/zh-cn/gallery/golang-in-21-days/",
+	"title": "golang in 21 days",
+	"tags": [],
+	"categories": [],
+	"series": [],
+	"description": "golang入门教程，针对以前没有学习过编程的初学者",
+	"content": ""
+},
+{
 	"uri": "https://ybilly.com/zh-cn/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/",
 	"title": "观察者模式",
 	"tags": [],
@@ -195,7 +222,7 @@
 	"categories": [],
 	"series": [],
 	"description": "",
-	"content": "有人说：“订阅-发者模式=观察者模式”，这么理解的人，是因为订阅-发布模式这个名字取的太简洁。\n完整的解读订阅-发布模式，应该叫订阅-分发-发布模式。\n观察者模式涉及的角色：订阅者、观察者和目标；而订阅-分发-发布模式涉及的角色：订阅者、发布者和分发器。注意取名的不同表示他们执行的逻辑不同。\n 订阅者：不用解释了。 观察者：观察目标的状态，然后将结果告诉订阅者。 目标：完全是群众演员。 发布者：将自己的信息或状态告诉分发器，nothing more。 分发器：将发布者告诉自己的信息转告给订阅者，so simple。  这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。\n我们用现实的例子来说明吧。\n观察者模式 你在路上看到蚂蚁搬家，想知道它们什么时候搬完，但是又又不想一直这么无聊的盯。所以你找个小孩，给他一块糖，叫他帮你看，好了打电话告诉你。然后你就回寝室打农药了。\n小孩就是观察者，蚂蚁搬家就是目标，你是订阅者。应用场景直观明了。\n后来，你又看到一窝蚂蚁，只好又叫个小孩。因为职能必须唯一，当然我们不可以叫单个小孩一个人看两。\n后来，又叫了个小孩……又叫了个小孩……又叫了个……\n小孩多还不是麻烦，麻烦大的是，有一天，隔壁老王对这个小孩说，也通知我一下，隔壁老李对另一个小孩说，也通知我一下……\n每个小孩要通知 100 个人，你等着 100 个小孩通知你。如果有 1000 个……10000 个……\n订阅-发布模式 这个时候就要另一个模式出场了。有个孩子王还是很有头脑的。他对所有小孩说，你们看着蚂蚁搬家，有结果就告诉他。然后你对其它人说，谁想知道蚂蚁搬家最新进展的来我这里登记一下姓名、年龄、爱好和蚂蚁窝的编号。这时，小孩是发布者，孩子王是分发器，你和老王老李是订阅者。\n延伸 然后孩子王又给老王老李他们两种选择，一种是等他来打电话给老王老李，另一种是隔一段时间老王老李打电话找他问，这就是 push 和 pull 了。\n"
+	"content": "有人说：“订阅-发布模式=观察者模式”，这么理解的人，是因为订阅-发布模式这个名字取的太简洁。\n完整的解读订阅-发布模式，应该叫订阅-分发-发布模式。\n观察者模式涉及的角色：订阅者、观察者和目标；而订阅-分发-发布模式涉及的角色：订阅者、发布者和分发器。注意取名的不同表示他们执行的逻辑不同。\n 订阅者：不用解释了。 观察者：观察目标的状态，然后将结果告诉订阅者。 目标：完全是群众演员。 发布者：将自己的信息或状态告诉分发器，nothing more。 分发器：将发布者告诉自己的信息转告给订阅者，so simple。  这么一说应该已经很明确了。各个角色的定位和逻辑是不同。由于逻辑和功能的不同，导致这两种模式的应用场景也不同。\n我们用现实的例子来说明吧。\n观察者模式 你在路上看到蚂蚁搬家，想知道它们什么时候搬完，但是又又不想一直这么无聊的盯。所以你找个小孩，给他一块糖，叫他帮你看，好了打电话告诉你。然后你就回寝室打农药了。\n小孩就是观察者，蚂蚁搬家就是目标，你是订阅者。应用场景直观明了。\n后来，你又看到一窝蚂蚁，只好又叫个小孩。因为职能必须唯一，当然我们不可以叫单个小孩一个人看两。\n后来，又叫了个小孩……又叫了个小孩……又叫了个……\n小孩多还不是麻烦，麻烦大的是，有一天，隔壁老王对这个小孩说，也通知我一下，隔壁老李对另一个小孩说，也通知我一下……\n每个小孩要通知 100 个人，你等着 100 个小孩通知你。如果有 1000 个……10000 个……\n订阅-发布模式 这个时候就要另一个模式出场了。有个孩子王还是很有头脑的。他对所有小孩说，你们看着蚂蚁搬家，有结果就告诉他。然后你对其它人说，谁想知道蚂蚁搬家最新进展的来我这里登记一下姓名、年龄、爱好和蚂蚁窝的编号。这时，小孩是发布者，孩子王是分发器，你和老王老李是订阅者。\n延伸 然后孩子王又给老王老李他们两种选择，一种是等他来打电话给老王老李，另一种是隔一段时间老王老李打电话找他问，这就是 push 和 pull 了。\n"
 },
 {
 	"uri": "https://ybilly.com/zh-cn/tags/%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F/",
@@ -225,17 +252,8 @@
 	"content": "Updated: 2019-01-06，新增更通用的脚本方法：传送门·通用翻墙脚本\ngit config 配置代理在go get命令中无效 go get 下载软件包时遇到的翻墙问题确实很烦人。而且 git config 里面配的代理也是会导致go get失败的。\n因为当你使用 go get golang.org/x/crypto 时，需要先访问 https://golang.org/x/crypto?go-get=1 来获取版本库的类型是 git 或 svn 或是其它 。这个阶段 git config 配置的代理是不起作用的。所以 go get就会失败。\n直接使用 ss 的 socks5 代理 在 windows 环境中，网上以前的经验是使用一个软件把 ss 的 socks5 代理转成 http 代理，然后使用 set http_proxy=http://127.0.0.1:1081 这样来达到目的。\n实际上不需要那么麻烦，经过测试，go get命令直接就可以支持 socks5 代理。\n新建一个批处理 goget.bat，放到 PATH 环境下。脚本如下：\n1 2 3 4 5 6 7 8 9 10  @echo off\rset http_proxy=socks5://127.0.0.1:1080\rset https_proxy=socks5://127.0.0.1:1080\rgo get -u -v %*\recho ...\rpause\r  使用的时候直接打开命令行输入 goget golang.org/x/crypto 来看看效果。\n1 2 3 4 5 6 7 8  e:\\project\\go\\src\u0026gt;goget golang.org/x/crypto\r Fetching https://golang.org/x/crypto?go-get=1\rParsing meta tags from https://golang.org/x/crypto?go-get=1 (status code 200)\rget \u0026#34;golang.org/x/crypto\u0026#34;: found meta tag get.metaImport{Prefix:\u0026#34;golang.org/x/crypto\u0026#34;, VCS:\u0026#34;git\u0026#34;, RepoRoot:\u0026#34;https://go.googlesource.com/crypto\u0026#34;} at https://golang.org/x/crypto?go-get=1\rgolang.org/x/crypto (download)\rpackage golang.org/x/crypto: no Go files in E:\\project\\go\\src\\golang.org\\x\\crypto\r...\r请按任意键继续. . .\r  这下完美了。\n"
 },
 {
-	"uri": "https://ybilly.com/zh-cn/archives/",
-	"title": "Archives",
-	"tags": [],
-	"categories": [],
-	"series": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://ybilly.com/zh-cn/series/",
-	"title": "专栏",
+	"title": "Series",
 	"tags": [],
 	"categories": [],
 	"series": [],
