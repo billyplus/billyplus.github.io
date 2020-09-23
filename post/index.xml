@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 05 Jan 2020 15:28:58 +0000</lastBuildDate><atom:link href="https://ybilly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Sep 2020 10:20:00 +0000</lastBuildDate><atom:link href="https://ybilly.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Failed to start Simple Desktop Display Manager</title>
+      <link>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</link>
+      <pubDate>Tue, 22 Sep 2020 10:20:00 +0000</pubDate>
+      
+      <guid>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</guid>
+      <description>&lt;p&gt;把&lt;code&gt;nv&lt;/code&gt;的独显拆下来后，开机进不了&lt;code&gt;manjaro&lt;/code&gt;，提示&lt;code&gt;failed to start Simple Desktop Display Manager&lt;/code&gt;。猜测是显示配置不能自动更新。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>引言</title>
       <link>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</link>

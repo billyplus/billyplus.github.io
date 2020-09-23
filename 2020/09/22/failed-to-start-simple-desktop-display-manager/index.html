@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>通用翻墙脚本 | 负重前行</title>
+  <head>  <title>Failed to start Simple Desktop Display Manager | 负重前行</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.75.1" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -15,13 +15,13 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的http_proxy或者https_proxy，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的 …">
+<meta name="description" content="把nv的独显拆下来后，开机进不了manjaro，提示failed to start Simple Desktop Display Manager。猜测是显示配置不能自动更新。">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "">
-<meta name = "twitter:title" content = "通用翻墙脚本" />
-<meta property = "og:url" content = "https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" />
-<meta property = "og:title" content = "通用翻墙脚本" />
-<meta property = "og:description" content = "比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的http_proxy或者https_proxy，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的 …" />
+<meta name = "twitter:title" content = "Failed to start Simple Desktop Display Manager" />
+<meta property = "og:url" content = "https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/" />
+<meta property = "og:title" content = "Failed to start Simple Desktop Display Manager" />
+<meta property = "og:description" content = "把nv的独显拆下来后，开机进不了manjaro，提示failed to start Simple Desktop Display Manager。猜测是显示配置不能自动更新。" />
 <meta property = "og:image" content = "https://ybilly.com/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://ybilly.com/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://ybilly.com/icons/favicon-32x32.png'>
@@ -31,7 +31,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/'>
+  <link rel='canonical' href='https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/'>
 
     
 
@@ -108,38 +108,34 @@
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>通用翻墙脚本</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Failed to start Simple Desktop Display Manager</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Jan 6, 2019</span>
-  <a href = 'https://ybilly.com/tags/v2ray' class = 'post_tag button button_translucent'>v2ray
+    Sep 22, 2020</span>
+  <a href = 'https://ybilly.com/tags/linux' class = 'post_tag button button_translucent'>linux
   </a>
-  <a href = 'https://ybilly.com/tags/shadowsocks' class = 'post_tag button button_translucent'>shadowsocks
-  </a>
-  <a href = 'https://ybilly.com/tags/golang' class = 'post_tag button button_translucent'>golang
-  </a>
-  <a href = 'https://ybilly.com/tags/%E7%BF%BB%E5%A2%99' class = 'post_tag button button_translucent'>翻墙
+  <a href = 'https://ybilly.com/tags/manjaro' class = 'post_tag button button_translucent'>manjaro
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=%e9%80%9a%e7%94%a8%e7%bf%bb%e5%a2%99%e8%84%9a%e6%9c%ac&url=https%3a%2f%2fybilly.com%2f2019%2f01%2f06%2f%25E9%2580%259A%25E7%2594%25A8%25E7%25BF%25BB%25E5%25A2%2599%25E8%2584%259A%25E6%259C%25AC%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Failed%20to%20start%20Simple%20Desktop%20Display%20Manager&url=https%3a%2f%2fybilly.com%2f2020%2f09%2f22%2ffailed-to-start-simple-desktop-display-manager%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fybilly.com%2f2019%2f01%2f06%2f%25E9%2580%259A%25E7%2594%25A8%25E7%25BF%25BB%25E5%25A2%2599%25E8%2584%259A%25E6%259C%25AC%2f&t=%e9%80%9a%e7%94%a8%e7%bf%bb%e5%a2%99%e8%84%9a%e6%9c%ac" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fybilly.com%2f2020%2f09%2f22%2ffailed-to-start-simple-desktop-display-manager%2f&t=Failed%20to%20start%20Simple%20Desktop%20Display%20Manager" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -147,7 +143,7 @@
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" title="Copy Link" class="link link_yank">
+  <a href="https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -155,46 +151,12 @@
 </div>
 
     
-    <p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
-<p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759">ZeppLu</a>的方案。</p>
-<h2 id="windows-下的方案">Windows 下的方案</h2>
-<p>在<code>PATH</code>目录下新建一个<code>proxy.bat</code>的批处理</p>
-<div class="highlight"><pre class="chroma"><code class="language-bat" data-lang="bat"><span class="ln"> 1</span><span class="p">@</span><span class="k">echo</span> off
-<span class="ln"> 2</span>
-<span class="ln"> 3</span><span class="k">set</span> <span class="nv">http_proxy</span><span class="p">=</span>socks5://127.0.0.1:1080
-<span class="ln"> 4</span><span class="k">set</span> <span class="nv">https_proxy</span><span class="p">=</span>127.0.0.1:1081
-<span class="ln"> 5</span>
-<span class="ln"> 6</span><span class="nv">%*</span>
-<span class="ln"> 7</span>
-<span class="ln"> 8</span><span class="k">echo</span> ...
-<span class="ln"> 9</span>
-<span class="ln">10</span><span class="k">pause</span>
-</code></pre></div><h2 id="linux-下的方案">Linux 下的方案</h2>
-<p>在<code>.bashrc</code>或者<code>.profile</code>（取决于你使用的 tty）中增加以下设置</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span><span class="nb">alias</span> <span class="nv">socks</span><span class="o">=</span><span class="s1">&#39;ALL_PROXY=socks5://127.0.0.1:1080/ \
-</span><span class="ln">2</span><span class="s1">        http_proxy=http://127.0.0.1:1081/ \
-</span><span class="ln">3</span><span class="s1">        https_proxy=http://127.0.0.1:1081/ \
-</span><span class="ln">4</span><span class="s1">        HTTP_PROXY=http://127.0.0.1:1081/ \
-</span><span class="ln">5</span><span class="s1">        HTTPS_PROXY=http://127.0.0.1:1081/&#39;</span>
-</code></pre></div><h2 id="使用效果">使用效果</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bat" data-lang="bat"><span class="ln"> 1</span><span class="p">&gt;</span>proxy go get -u -v golang.org/x/net
-<span class="ln"> 2</span>Fetching https://golang.org/x/net?go-get=1
-<span class="ln"> 3</span>Parsing meta tags from https://golang.org/x/net?go-get=1 (status code 200)
-<span class="ln"> 4</span>get <span class="s2">&#34;golang.org/x/net&#34;</span>: found meta tag get.metaImport{Prefix:<span class="s2">&#34;golang.org/x/net&#34;</span>, VCS:<span class="s2">&#34;git&#34;</span>, RepoRoot:<span class="s2">&#34;https://go.googlesource.com/net&#34;</span>} at https://golang.org/x/net?go-get=1
-<span class="ln"> 5</span>go: finding golang.org/x/net latest
-<span class="ln"> 6</span>Fetching https://golang.org/x?go-get=1
-<span class="ln"> 7</span>Parsing meta tags from https://golang.org/x?go-get=1 (status code 200)
-<span class="ln"> 8</span>Fetching https://golang.org?go-get=1
-<span class="ln"> 9</span>Parsing meta tags from https://golang.org?go-get=1 (status code 200)
-<span class="ln">10</span>...
-<span class="ln">11</span>请按任意键继续. . .
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span> ~ socks go get -u -v golang.org/x/crypto
-<span class="ln">2</span>Fetching https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span>
-<span class="ln">3</span>Parsing meta tags from https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span> <span class="o">(</span>status code 200<span class="o">)</span>
-<span class="ln">4</span>get <span class="s2">&#34;golang.org/x/crypto&#34;</span>: found meta tag get.metaImport<span class="o">{</span>Prefix:<span class="s2">&#34;golang.org/x/crypto&#34;</span>, VCS:<span class="s2">&#34;git&#34;</span>, RepoRoot:<span class="s2">&#34;https://go.googlesource.com/crypto&#34;</span><span class="o">}</span> at https://golang.org/x/crypto?go-get<span class="o">=</span><span class="m">1</span>
-<span class="ln">5</span>golang.org/x/crypto <span class="o">(</span>download<span class="o">)</span>
-<span class="ln">6</span>package golang.org/x/crypto: no Go files in /e/project/go/src/golang.org/x/crypto
-</code></pre></div>
+    <p>把<code>nv</code>的独显拆下来后，开机进不了<code>manjaro</code>，提示<code>failed to start Simple Desktop Display Manager</code>。猜测是显示配置不能自动更新。</p>
+<p>查看一下配置</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>ls /etc/X11/xorg.conf.d/ -al
+<span class="ln">2</span>
+<span class="ln">3</span>90-mhwd.conf -&gt; /etc/X11/mhwd.d/nvidia.conf
+</code></pre></div><p>显示有个文件：<code>90-mhwd.conf</code>，指向的正是 nvidia 的配置，直接把这个文件备份&amp;&amp;删除，重启。</p>
   </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
@@ -211,9 +173,6 @@
     <ul class="flex-column">
       
       <li>
-        <a href="https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/" class="nav-link">Failed to start Simple Desktop Display Manager</a>
-      </li>
-      <li>
         <a href="https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/" class="nav-link">引言</a>
       </li>
       <li>
@@ -221,6 +180,9 @@
       </li>
       <li>
         <a href="https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/" class="nav-link">vultr新用户送50美金</a>
+      </li>
+      <li>
+        <a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" class="nav-link">通用翻墙脚本</a>
       </li>
       <li>
         <a href="https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/" class="nav-link">docker容器的迁移</a>
