@@ -1,10 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ybilly.com/tags/archlinux/</loc>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ybilly.com/</loc>
-    <lastmod>2020-01-06T17:20:26+08:00</lastmod>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,6 +20,26 @@
                 hreflang="zh-cn"
                 href="https://ybilly.com/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/2020/09/23/fix-failed-to-start-simple-desktop-display-manager/</loc>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/tags/manjaro/</loc>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/posts/</loc>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</loc>
+    <lastmod>2020-09-23T09:25:00+00:00</lastmod>
   </url>
   
   <url>
@@ -53,21 +78,6 @@
   </url>
   
   <url>
-    <loc>https://ybilly.com/tags/</loc>
-    <lastmod>2020-01-06T17:20:26+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ybilly.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ybilly.com/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://ybilly.com/archive/</loc>
     <lastmod>2020-01-06T16:20:25+08:00</lastmod>
   </url>
@@ -83,33 +93,8 @@
   </url>
   
   <url>
-    <loc>https://ybilly.com/posts/</loc>
-    <lastmod>2020-01-06T17:10:49+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ybilly.com/tags/wps/</loc>
     <lastmod>2019-09-15T10:20:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ybilly.com/categories/%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</loc>
-    <lastmod>2020-01-06T17:10:49+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ybilly.com/categories/</loc>
-    <lastmod>2020-01-06T17:10:49+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://ybilly.com/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://ybilly.com/categories/"
-                />
   </url>
   
   <url>
@@ -195,6 +180,36 @@
   <url>
     <loc>https://ybilly.com/about/</loc>
     <lastmod>2019-09-23T11:00:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/categories/</loc>
+    <lastmod>2019-09-23T11:00:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ybilly.com/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ybilly.com/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ybilly.com/tags/</loc>
+    <lastmod>2019-09-23T11:00:23+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ybilly.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://ybilly.com/tags/"
+                />
   </url>
   
 </urlset>
