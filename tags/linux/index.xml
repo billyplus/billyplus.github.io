@@ -1,23 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on 长孙叔叔的次世界</title>
+    <title>linux on 负重前行</title>
     <link>https://ybilly.com/tags/linux/</link>
-    <description>Recent content in linux on 长孙叔叔的次世界</description>
+    <description>Recent content in linux on 负重前行</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Sep 2019 10:20:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ybilly.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 15 Sep 2019 10:20:00 +0000</lastBuildDate><atom:link href="https://ybilly.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux下默认用wps打开office文件</title>
       <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
       <pubDate>Sun, 15 Sep 2019 10:20:00 +0000</pubDate>
       
       <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
-      <description>问题 相信很多人都遇到过，每次更新wps后，都会发生.docx、.xlsx文件默认打开方式被修改的问题。直接点击打开office文件的话，会被</description>
+      <description>&lt;p&gt;相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生&lt;code&gt;.docx&lt;/code&gt;、&lt;code&gt;.xlsx&lt;/code&gt;文件默认打开方式被修改的问题。直接点击打开&lt;code&gt;office&lt;/code&gt;文件的话，会被认为是打开一个&lt;code&gt;zip&lt;/code&gt;文件。只有通过右键菜单里面选择&lt;code&gt;open with wps...&lt;/code&gt;这种方式才能正常使用 wps 打开。&lt;/p&gt;</description>
     </item>
     
   </channel>
