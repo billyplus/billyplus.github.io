@@ -1,21 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>vps on 负重前行</title>
-    <link>https://ybilly.com/categories/vps/</link>
-    <description>Recent content in vps on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 07 Apr 2019 10:13:58 +0000</lastBuildDate><atom:link href="https://ybilly.com/categories/vps/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>vultr新用户送50美金</title>
-      <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
-      <pubDate>Sun, 07 Apr 2019 10:13:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
-      <description>&lt;p&gt;刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>vps - 分类 - 长孙叔叔</title>
+        <link>https://ybilly.com/categories/vps/</link>
+        <description>vps - 分类 - 长孙叔叔</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 07 Apr 2019 10:13:58 &#43;0000</lastBuildDate><atom:link href="https://ybilly.com/categories/vps/" rel="self" type="application/rss+xml" /><item>
+    <title>vultr新用户送50美金</title>
+    <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
+    <pubDate>Sun, 07 Apr 2019 10:13:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
+    <description><![CDATA[<p>刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。</p>]]></description>
+</item></channel>
 </rss>

@@ -1,22 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>docker on 负重前行</title>
-    <link>https://ybilly.com/tags/docker/</link>
-    <description>Recent content in docker on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 15 Nov 2018 15:28:58 +0000</lastBuildDate><atom:link href="https://ybilly.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>docker容器的迁移</title>
-      <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
-      <pubDate>Thu, 15 Nov 2018 15:28:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
-      <description>&lt;p&gt;原来在&lt;code&gt;vultr&lt;/code&gt;买的&lt;code&gt;vps&lt;/code&gt;内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）&lt;/p&gt;
-&lt;p&gt;另外准备了一台 1G 内存的&lt;code&gt;vps&lt;/code&gt;，需要做的事情就是把以前的&lt;code&gt;数据库&lt;/code&gt;、&lt;code&gt;git数据&lt;/code&gt;、各种东西迁移过去。所幸全部应用都已经用&lt;code&gt;docker&lt;/code&gt;实现了容器化，有用数据都放在&lt;code&gt;volume&lt;/code&gt;里面。迁移起来非常方便。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>docker - 标签 - 长孙叔叔</title>
+        <link>https://ybilly.com/tags/docker/</link>
+        <description>docker - 标签 - 长孙叔叔</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Nov 2018 15:28:58 &#43;0000</lastBuildDate><atom:link href="https://ybilly.com/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>docker容器的迁移</title>
+    <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
+    <pubDate>Thu, 15 Nov 2018 15:28:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
+    <description><![CDATA[<p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
+<p>另外准备了一台 1G 内存的<code>vps</code>，需要做的事情就是把以前的<code>数据库</code>、<code>git数据</code>、各种东西迁移过去。所幸全部应用都已经用<code>docker</code>实现了容器化，有用数据都放在<code>volume</code>里面。迁移起来非常方便。</p>]]></description>
+</item></channel>
 </rss>

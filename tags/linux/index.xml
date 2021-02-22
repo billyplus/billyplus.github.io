@@ -1,30 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>linux on 负重前行</title>
-    <link>https://ybilly.com/tags/linux/</link>
-    <description>Recent content in linux on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 10:20:00 +0000</lastBuildDate><atom:link href="https://ybilly.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Failed to start Simple Desktop Display Manager</title>
-      <link>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</link>
-      <pubDate>Tue, 22 Sep 2020 10:20:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</guid>
-      <description>&lt;p&gt;把&lt;code&gt;nv&lt;/code&gt;的独显拆下来后，开机进不了&lt;code&gt;manjaro&lt;/code&gt;，提示&lt;code&gt;failed to start Simple Desktop Display Manager&lt;/code&gt;。猜测是显示配置不能自动更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>linux下默认用wps打开office文件</title>
-      <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Sun, 15 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
-      <description>&lt;p&gt;相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生&lt;code&gt;.docx&lt;/code&gt;、&lt;code&gt;.xlsx&lt;/code&gt;文件默认打开方式被修改的问题。直接点击打开&lt;code&gt;office&lt;/code&gt;文件的话，会被认为是打开一个&lt;code&gt;zip&lt;/code&gt;文件。只有通过右键菜单里面选择&lt;code&gt;open with wps...&lt;/code&gt;这种方式才能正常使用 wps 打开。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>linux - 标签 - 长孙叔叔</title>
+        <link>https://ybilly.com/tags/linux/</link>
+        <description>linux - 标签 - 长孙叔叔</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Sep 2020 10:20:00 &#43;0000</lastBuildDate><atom:link href="https://ybilly.com/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Failed to start Simple Desktop Display Manager</title>
+    <link>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</link>
+    <pubDate>Tue, 22 Sep 2020 10:20:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</guid>
+    <description><![CDATA[<p>把<code>nv</code>的独显拆下来后，开机进不了<code>manjaro</code>，提示<code>failed to start Simple Desktop Display Manager</code>。猜测是显示配置不能自动更新。</p>]]></description>
+</item><item>
+    <title>linux下默认用wps打开office文件</title>
+    <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
+    <pubDate>Sun, 15 Sep 2019 10:20:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
+    <description><![CDATA[<p>相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用 wps 打开。</p>]]></description>
+</item></channel>
 </rss>

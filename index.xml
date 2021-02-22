@@ -1,107 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>负重前行</title>
-    <link>https://ybilly.com/</link>
-    <description>Recent content on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 22 Sep 2020 10:20:00 +0000</lastBuildDate><atom:link href="https://ybilly.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Failed to start Simple Desktop Display Manager</title>
-      <link>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</link>
-      <pubDate>Tue, 22 Sep 2020 10:20:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</guid>
-      <description>&lt;p&gt;把&lt;code&gt;nv&lt;/code&gt;的独显拆下来后，开机进不了&lt;code&gt;manjaro&lt;/code&gt;，提示&lt;code&gt;failed to start Simple Desktop Display Manager&lt;/code&gt;。猜测是显示配置不能自动更新。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>引言</title>
-      <link>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</link>
-      <pubDate>Sun, 05 Jan 2020 15:28:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</guid>
-      <description>面向的对象 以前没有接触过编程的从业者或者学生，经常做一些重复性的数字计算类工作，需要使用较复杂的excel公式或者手动重复多次才能完成任务
-不涉及内容 本书内容不会涉及的二进制、十六进制的概念，不讲解系统内部原理，不讲解网络协议的组成。</description>
-    </item>
-    
-    <item>
-      <title>linux下默认用wps打开office文件</title>
-      <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
-      <pubDate>Sun, 15 Sep 2019 10:20:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
-      <description>&lt;p&gt;相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生&lt;code&gt;.docx&lt;/code&gt;、&lt;code&gt;.xlsx&lt;/code&gt;文件默认打开方式被修改的问题。直接点击打开&lt;code&gt;office&lt;/code&gt;文件的话，会被认为是打开一个&lt;code&gt;zip&lt;/code&gt;文件。只有通过右键菜单里面选择&lt;code&gt;open with wps...&lt;/code&gt;这种方式才能正常使用 wps 打开。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ybilly.com/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vultr新用户送50美金</title>
-      <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
-      <pubDate>Sun, 07 Apr 2019 10:13:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
-      <description>&lt;p&gt;刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ybilly.com/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/about/</guid>
-      <description>There should be a STAR here.</description>
-    </item>
-    
-    <item>
-      <title>通用翻墙脚本</title>
-      <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的&lt;code&gt;http_proxy&lt;/code&gt;或者&lt;code&gt;https_proxy&lt;/code&gt;，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。&lt;/p&gt;
-&lt;p&gt;参考&lt;a href=&#34;https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759&#34;&gt;ZeppLu&lt;/a&gt;的方案。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>docker容器的迁移</title>
-      <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
-      <pubDate>Thu, 15 Nov 2018 15:28:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
-      <description>&lt;p&gt;原来在&lt;code&gt;vultr&lt;/code&gt;买的&lt;code&gt;vps&lt;/code&gt;内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）&lt;/p&gt;
-&lt;p&gt;另外准备了一台 1G 内存的&lt;code&gt;vps&lt;/code&gt;，需要做的事情就是把以前的&lt;code&gt;数据库&lt;/code&gt;、&lt;code&gt;git数据&lt;/code&gt;、各种东西迁移过去。所幸全部应用都已经用&lt;code&gt;docker&lt;/code&gt;实现了容器化，有用数据都放在&lt;code&gt;volume&lt;/code&gt;里面。迁移起来非常方便。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>观察者模式与订阅-发布模式的区别</title>
-      <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Tue, 10 Jul 2018 14:24:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>&lt;p&gt;有人说：“&lt;code&gt;订阅-发布模式&lt;/code&gt;=&lt;code&gt;观察者模式&lt;/code&gt;”，这么理解的人，是因为&lt;code&gt;订阅-发布模式&lt;/code&gt;这个名字取的太简洁。&lt;/p&gt;
-&lt;p&gt;完整的解读&lt;code&gt;订阅-发布模式&lt;/code&gt;，应该叫&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;观察者模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;观察者&lt;/code&gt;和&lt;code&gt;目标&lt;/code&gt;；而&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;发布者&lt;/code&gt;和&lt;code&gt;分发器&lt;/code&gt;。注意取名的不同表示他们执行的逻辑不同。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>go-get 利用 socks5 代理翻墙下载</title>
-      <link>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</link>
-      <pubDate>Tue, 03 Jul 2018 15:28:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
-      <description>&lt;p&gt;Updated: 2019-01-06，新增更通用的脚本方法：&lt;a href=&#34;https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/&#34;&gt;传送门·通用翻墙脚本&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>长孙叔叔</title>
+        <link>https://ybilly.com/</link>
+        <description>不可描述</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Sep 2020 10:20:00 &#43;0000</lastBuildDate>
+            <atom:link href="https://ybilly.com/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Failed to start Simple Desktop Display Manager</title>
+    <link>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</link>
+    <pubDate>Tue, 22 Sep 2020 10:20:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2020/09/22/failed-to-start-simple-desktop-display-manager/</guid>
+    <description><![CDATA[<p>把<code>nv</code>的独显拆下来后，开机进不了<code>manjaro</code>，提示<code>failed to start Simple Desktop Display Manager</code>。猜测是显示配置不能自动更新。</p>]]></description>
+</item><item>
+    <title>引言</title>
+    <link>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</link>
+    <pubDate>Sun, 05 Jan 2020 15:28:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2020/01/05/%E5%BC%95%E8%A8%80/</guid>
+    <description><![CDATA[面向的对象 以前没有接触过编程的从业者或者学生，经常做一些重复性的数字计算类工作，需要使用较复杂的excel公式或者手动重复多次才能完成任务 不]]></description>
+</item><item>
+    <title>linux下默认用wps打开office文件</title>
+    <link>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</link>
+    <pubDate>Sun, 15 Sep 2019 10:20:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/09/15/linux%E4%B8%8B%E9%BB%98%E8%AE%A4%E7%94%A8wps%E6%89%93%E5%BC%80office%E6%96%87%E4%BB%B6/</guid>
+    <description><![CDATA[<p>相信很多人都遇到过，Linux 下每次更新 wps 后，都会发生<code>.docx</code>、<code>.xlsx</code>文件默认打开方式被修改的问题。直接点击打开<code>office</code>文件的话，会被认为是打开一个<code>zip</code>文件。只有通过右键菜单里面选择<code>open with wps...</code>这种方式才能正常使用 wps 打开。</p>]]></description>
+</item><item>
+    <title>vultr新用户送50美金</title>
+    <link>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</link>
+    <pubDate>Sun, 07 Apr 2019 10:13:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/04/07/vultr%E6%96%B0%E7%94%A8%E6%88%B7%E9%80%8150%E7%BE%8E%E9%87%91/</guid>
+    <description><![CDATA[<p>刚才看 vultr 帐户时，发现 vultr 又有拉新活动，使用推荐码注册的 vultr 新用户，首次充值时，将获得 50 刀的奖励。也就是第一笔充 10 刀，最终获得 60 刀。</p>]]></description>
+</item><item>
+    <title>通用翻墙脚本</title>
+    <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
+    <pubDate>Sun, 06 Jan 2019 17:25:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
+    <description><![CDATA[<p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+<p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759" target="_blank" rel="noopener noreffer">ZeppLu</a>的方案。</p>]]></description>
+</item><item>
+    <title>docker容器的迁移</title>
+    <link>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</link>
+    <pubDate>Thu, 15 Nov 2018 15:28:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/11/15/docker%E7%9A%84%E8%BF%81%E7%A7%BB/</guid>
+    <description><![CDATA[<p>原来在<code>vultr</code>买的<code>vps</code>内存有点小，准备留着备用，或者放弃掉。（2.5 美金的机器，现在已经绝种的套餐，放弃掉太可惜了。）</p>
+<p>另外准备了一台 1G 内存的<code>vps</code>，需要做的事情就是把以前的<code>数据库</code>、<code>git数据</code>、各种东西迁移过去。所幸全部应用都已经用<code>docker</code>实现了容器化，有用数据都放在<code>volume</code>里面。迁移起来非常方便。</p>]]></description>
+</item><item>
+    <title>观察者模式与订阅-发布模式的区别</title>
+    <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Tue, 10 Jul 2018 14:24:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[<p>有人说：“<code>订阅-发布模式</code>=<code>观察者模式</code>”，这么理解的人，是因为<code>订阅-发布模式</code>这个名字取的太简洁。</p>
+<p>完整的解读<code>订阅-发布模式</code>，应该叫<code>订阅-分发-发布模式</code>。</p>
+<p><code>观察者模式</code>涉及的角色：<code>订阅者</code>、<code>观察者</code>和<code>目标</code>；而<code>订阅-分发-发布模式</code>涉及的角色：<code>订阅者</code>、<code>发布者</code>和<code>分发器</code>。注意取名的不同表示他们执行的逻辑不同。</p>]]></description>
+</item><item>
+    <title>go-get 利用 socks5 代理翻墙下载</title>
+    <link>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</link>
+    <pubDate>Tue, 03 Jul 2018 15:28:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
+    <description><![CDATA[<p>Updated: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" target="_blank" rel="noopener noreffer">传送门·通用翻墙脚本</a></p>]]></description>
+</item></channel>
 </rss>

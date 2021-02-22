@@ -1,23 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>软件模式 on 负重前行</title>
-    <link>https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/</link>
-    <description>Recent content in 软件模式 on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 10 Jul 2018 14:24:58 +0000</lastBuildDate><atom:link href="https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>观察者模式与订阅-发布模式的区别</title>
-      <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <pubDate>Tue, 10 Jul 2018 14:24:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <description>&lt;p&gt;有人说：“&lt;code&gt;订阅-发布模式&lt;/code&gt;=&lt;code&gt;观察者模式&lt;/code&gt;”，这么理解的人，是因为&lt;code&gt;订阅-发布模式&lt;/code&gt;这个名字取的太简洁。&lt;/p&gt;
-&lt;p&gt;完整的解读&lt;code&gt;订阅-发布模式&lt;/code&gt;，应该叫&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;观察者模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;观察者&lt;/code&gt;和&lt;code&gt;目标&lt;/code&gt;；而&lt;code&gt;订阅-分发-发布模式&lt;/code&gt;涉及的角色：&lt;code&gt;订阅者&lt;/code&gt;、&lt;code&gt;发布者&lt;/code&gt;和&lt;code&gt;分发器&lt;/code&gt;。注意取名的不同表示他们执行的逻辑不同。&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>软件模式 - 标签 - 长孙叔叔</title>
+        <link>https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/</link>
+        <description>软件模式 - 标签 - 长孙叔叔</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 10 Jul 2018 14:24:58 &#43;0000</lastBuildDate><atom:link href="https://ybilly.com/tags/%E8%BD%AF%E4%BB%B6%E6%A8%A1%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+    <title>观察者模式与订阅-发布模式的区别</title>
+    <link>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+    <pubDate>Tue, 10 Jul 2018 14:24:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/07/10/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E4%B8%8E%E8%AE%A2%E9%98%85-%E5%8F%91%E5%B8%83%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+    <description><![CDATA[<p>有人说：“<code>订阅-发布模式</code>=<code>观察者模式</code>”，这么理解的人，是因为<code>订阅-发布模式</code>这个名字取的太简洁。</p>
+<p>完整的解读<code>订阅-发布模式</code>，应该叫<code>订阅-分发-发布模式</code>。</p>
+<p><code>观察者模式</code>涉及的角色：<code>订阅者</code>、<code>观察者</code>和<code>目标</code>；而<code>订阅-分发-发布模式</code>涉及的角色：<code>订阅者</code>、<code>发布者</code>和<code>分发器</code>。注意取名的不同表示他们执行的逻辑不同。</p>]]></description>
+</item></channel>
 </rss>

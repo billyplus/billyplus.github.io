@@ -1,31 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>翻墙 on 负重前行</title>
-    <link>https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/</link>
-    <description>Recent content in 翻墙 on 负重前行</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <copyright>Copyright © 2018–2020, Billy Yuan; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Jan 2019 17:25:00 +0000</lastBuildDate><atom:link href="https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>通用翻墙脚本</title>
-      <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
-      <pubDate>Sun, 06 Jan 2019 17:25:00 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
-      <description>&lt;p&gt;比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的&lt;code&gt;http_proxy&lt;/code&gt;或者&lt;code&gt;https_proxy&lt;/code&gt;，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。&lt;/p&gt;
-&lt;p&gt;参考&lt;a href=&#34;https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759&#34;&gt;ZeppLu&lt;/a&gt;的方案。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>go-get 利用 socks5 代理翻墙下载</title>
-      <link>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</link>
-      <pubDate>Tue, 03 Jul 2018 15:28:58 +0000</pubDate>
-      
-      <guid>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
-      <description>&lt;p&gt;Updated: 2019-01-06，新增更通用的脚本方法：&lt;a href=&#34;https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/&#34;&gt;传送门·通用翻墙脚本&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>翻墙 - 标签 - 长孙叔叔</title>
+        <link>https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/</link>
+        <description>翻墙 - 标签 - 长孙叔叔</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>me@ybilly.com (长孙叔叔)</managingEditor>
+            <webMaster>me@ybilly.com (长孙叔叔)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Jan 2019 17:25:00 &#43;0000</lastBuildDate><atom:link href="https://ybilly.com/tags/%E7%BF%BB%E5%A2%99/" rel="self" type="application/rss+xml" /><item>
+    <title>通用翻墙脚本</title>
+    <link>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</link>
+    <pubDate>Sun, 06 Jan 2019 17:25:00 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/</guid>
+    <description><![CDATA[<p>比如我们在 go get 的时候，会遇到有些包要翻墙才能下载。在 npm install 的时候，node-sass 有些文件要翻墙下载。这些工具都会依赖于环境变量里面的<code>http_proxy</code>或者<code>https_proxy</code>，需要翻墙的时候，只要设置好这些环境变量，工具就能翻墙了。但是针对每个工具写一个脚本并不是一种可以接受的方案，我们需要更通用的方案。</p>
+<p>参考<a href="https://github.com/Microsoft/WSL/issues/2122#issuecomment-302153759" target="_blank" rel="noopener noreffer">ZeppLu</a>的方案。</p>]]></description>
+</item><item>
+    <title>go-get 利用 socks5 代理翻墙下载</title>
+    <link>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</link>
+    <pubDate>Tue, 03 Jul 2018 15:28:58 &#43;0000</pubDate>
+    <author>作者</author>
+    <guid>https://ybilly.com/2018/07/03/go-get%E5%88%A9%E7%94%A8ss%E7%9B%B4%E6%8E%A5%E7%BF%BB%E5%A2%99/</guid>
+    <description><![CDATA[<p>Updated: 2019-01-06，新增更通用的脚本方法：<a href="https://ybilly.com/2019/01/06/%E9%80%9A%E7%94%A8%E7%BF%BB%E5%A2%99%E8%84%9A%E6%9C%AC/" target="_blank" rel="noopener noreffer">传送门·通用翻墙脚本</a></p>]]></description>
+</item></channel>
 </rss>
